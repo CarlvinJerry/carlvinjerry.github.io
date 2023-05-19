@@ -8,50 +8,66 @@ section:
   template: sections/about.html
 
 # your designation
-designation: Software Engineer
+designation: Quantitative Analyst
 # your company information
 company:
-  name: Example Co.
-  url: "https://www.example.com"
+  name: Innova Ltd.
+  url: "https://www.innova.co.ke/"
 
 # your resume. this file path should be relative to you "static" directory
 # Dreprecated. Use resourceLinks instead.
 # resume: "files/resume.pdf"
 
 # a summary about you
-summary: 'I am a passionate software engineer with x years of working experience. I built OSS tools for [Kubernetes](https://kubernetes.io/) using GO. My tools help people to deploy their workloads in Kubernetes. Sometimes, I work on some fun projects such as writing a theme, etc.'
+summary: ' I am passionate quantitative analyst/developer with over 5 years of experience in the dynamic world of finance and technology. I thrive on solving complex challenges and leveraging my expertise in R, Python, C#, and F# to create innovative solutions for the capital markets industry. 
+With a keen eye for detail and a love for data,  I thrive on exploring the intricate patterns hidden within data and developing 
+robust algorithms that drive informed decision-making. 
+
+<br><br>
+
+My ability to bridge the gap between quantitative 
+analysis and software development empowers businesses to thrive in a rapidly evolving market environment. 
+Being a frequent user of functional programming techniques,I find immense satisfaction in leveraging the power of functional
+paradigms to solve complex challenges in innovative ways. I consider it not just a coding style, 
+but a philosophy that guides my approach to problem-solving.
+
+<br><br>
+
+I am constantly expanding my knowledge, staying at the forefront of emerging technologies, and 
+embracing new tools and techniques. This website is a window into my work, projects, and insights.
+Join me on this exciting journey of problem-solving and innovation in the data world. Let us connect and explore the possibilities together!'
 
 # your social links
 # give as many as you want. use font-awesome for the icons.
 socialLinks:
 - name: Email
   icon: "fas fa-envelope"
-  url: "example@gmail.com"
+  url: "carlvinjerry@gmail.com"
 
 - name: Github
   icon: "fab fa-github"
-  url: "https://www.github.com/example"
+  url: "https://github.com/CarlvinJerry"
 
-- name: Stackoverflow
-  icon: "fab fa-stack-overflow"
-  url: "#"
+# - name: Stackoverflow
+#   icon: "fab fa-stack-overflow"
+#   url: "#"
 
 - name: LinkedIn
   icon: "fab fa-linkedin"
-  url: "#"
+  url: "https://www.linkedin.com/in/carlvinmwange"
 
 - name: Twitter
   icon: "fab fa-twitter"
-  url: "#"
+  url: "https://twitter.com/PipeFunction"
 
-- name: Facebook
-  icon: "fab fa-facebook"
-  url: "#"
+# - name: Facebook
+#   icon: "fab fa-facebook"
+#   url: "#"
 
-- name: Mastadon
-  icon: "fab fa-mastodon"
-  url: "#"
-  rel: "me noopener"
+# - name: Mastadon
+#   icon: "fab fa-mastodon"
+#   url: "#"
+#   rel: "me noopener"
 
 # You can put custom buttons to link your relevant resources.
 # For example, you can put link for your resume.
@@ -63,35 +79,35 @@ resourceLinks:
 # You can show your verifiable certificates from https://www.credly.com.
 # You can also show a circular bar indicating the level of expertise on a certain skill
 badges:
-- type: certification
-  name: Certified Kubernetes Security Specialist
-  url: "https://www.credly.com/org/the-linux-foundation/badge/exam-developer-certified-kubernetes-security-specialist"
-  badge: "https://images.credly.com/size/680x680/images/f4bf92ed-8985-40b2-bc07-2f9308780854/kubernetes-security-specialist-logo-examdev.png"
+# - type: certification
+#   name: Certified Kubernetes Security Specialist
+#   url: "https://www.credly.com/org/the-linux-foundation/badge/exam-developer-certified-kubernetes-security-specialist"
+#   badge: "https://images.credly.com/size/680x680/images/f4bf92ed-8985-40b2-bc07-2f9308780854/kubernetes-security-specialist-logo-examdev.png"
 
-- type: certification
-  name: Istio and IBM Cloud Kubernetes Service
-  url: "https://www.credly.com/org/the-linux-foundation/badge/exam-developer-certified-kubernetes-security-specialist"
-  badge: "https://images.credly.com/size/680x680/images/8d34d489-84bf-4861-a4a0-9e9d68318c5c/Beyond_basics_of_Istio_on_Cloud_v2.png"
+# - type: certification
+#   name: Istio and IBM Cloud Kubernetes Service
+#   url: "https://www.credly.com/org/the-linux-foundation/badge/exam-developer-certified-kubernetes-security-specialist"
+#   badge: "https://images.credly.com/size/680x680/images/8d34d489-84bf-4861-a4a0-9e9d68318c5c/Beyond_basics_of_Istio_on_Cloud_v2.png"
 
-- type: certification
-  name: Artificial Intelligence and Machine Learning
-  url: "https://www.credly.com/org/grupo-bancolombia/badge/artificial-intelligence-and-machine-learning"
-  badge: "https://images.credly.com/size/680x680/images/e027514f-9d07-4b29-862f-fe21a8aaebf1/ae.png"
+# - type: certification
+#   name: Artificial Intelligence and Machine Learning
+#   url: "https://www.credly.com/org/grupo-bancolombia/badge/artificial-intelligence-and-machine-learning"
+#   badge: "https://images.credly.com/size/680x680/images/e027514f-9d07-4b29-862f-fe21a8aaebf1/ae.png"
 
-- type: soft-skill-indicator
-  name: Leadership
-  percentage: 85
-  color: blue
+# - type: soft-skill-indicator
+#   name: Leadership
+#   percentage: 85
+#   color: blue
 
-- type: soft-skill-indicator
-  name: Team Work
-  percentage: 90
-  color: yellow
+# - type: soft-skill-indicator
+#   name: Team Work
+#   percentage: 90
+#   color: yellow
 
-- type: soft-skill-indicator
-  name: Hard Working
-  percentage: 85
-  color: orange
+# - type: soft-skill-indicator
+#   name: Hard Working
+#   percentage: 85
+#   color: orange
 
 # you can also provide color code instead of the color name
 # - type: soft-skill-indicator

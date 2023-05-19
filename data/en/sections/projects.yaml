@@ -21,7 +21,7 @@ buttons:
 
 # your projects
 projects:
-- name: Kubernetes
+- name: R Shiny
   logo: /images/sections/projects/kubernetes.png
   role: Contributor
   timeline: "March 2018 - Present"

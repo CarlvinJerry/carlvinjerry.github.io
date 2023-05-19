@@ -11,39 +11,40 @@ section:
 # Your Skills.
 # Give a summary of you each skill in the summary section.
 skills:
-- name: Kubernetes
-  logo: /images/sections/skills/kubernetes.png
-  summary: "Capable of deploying, managing application on Kubernetes. Experienced in writing Kubernetes controllers for CRDs."
-  url: "https://kubernetes.io/"
+- name: Python
+  logo: /images/sections/skills/pyhton.png
+  summary: "Leveraging the versatility of Python, I have developed robust data analysis pipelines and implemented machine learning algorithms to extract valuable insights from complex datasets. From automating repetitive tasks to building scalable web applications, Python has been my go-to language for crafting efficient and reliable solutions."
+  url: "https://www.python.org/"
 
-- name: Go Development
-  logo: /images/sections/skills/go.png
-  summary: "Using as the main language for professional development. Capable of writing scalable, testable, and maintainable program."
-  url: "https://golang.org/"
+- name: R Stats
+  logo: /images/sections/skills/r.png
+  summary: "As an avid R programmer, I have developed advanced statistical models and conducted comprehensive data analysis to uncover patterns and insights. Using R's extensive library ecosystem, including packages like dplyr and ggplot2, I have created visually appealing visualizations and conducted rigorous statistical tests to drive evidence-based decision-making."
+  url: "https://www.r-project.org/"
 
-- name: Cloud Computing
-  logo: /images/sections/skills/cloud.png
-  summary: "Worked with most of the major clouds such as GCP, AWS, Azure etc."
-
-- name: Docker
-  logo: /images/sections/skills/docker.svg
+- name: F#
+  logo: /images/sections/skills/fs.png
+  summary: "With its strong functional programming capabilities, F# has been instrumental in developing robust and scalable financial software solutions. Leveraging F#'s type inference and immutability, I have crafted efficient and maintainable code for complex financial calculations, risk management systems, and algorithmic trading strategies."
+  url: "https://fsharp.org/"
+  
+- name: C#
+  logo: /images/sections/skills/cs.png
   summary: "Write most of the programs as dockerized container. Experienced with multi-stage, multi-arch build process."
-  url: "https://www.docker.com/"
+  url: "https://dotnet.microsoft.com/en-us/apps/aspnet/web-apps"
 
-- name: Prometheus
-  logo: /images/sections/skills/prometheus.png
-  summary: "Capable of setup, configure Prometheus metrics. Experienced with PromQL, AlertManager. Also, experienced with writing metric exporters."
-  url: "https://prometheus.io/"
+# - name: Prometheus
+#   logo: /images/sections/skills/prometheus.png
+#   summary: "Capable of setup, configure Prometheus metrics. Experienced with PromQL, AlertManager. Also, experienced with writing metric exporters."
+#   url: "https://prometheus.io/"
 
-- name: Linux
-  logo: /images/sections/skills/linux.png
-  summary: "Using as the main operating system. Capable of writing bash/shell scripts."
+# - name: Linux
+#   logo: /images/sections/skills/linux.png
+#   summary: "Using as the main operating system. Capable of writing bash/shell scripts."
 
 - name: Git
   logo: /images/sections/skills/git.png
   summary: "Experienced with git-based development. Mostly, use Github. Also, have experience in working with GitLab."
   url: "https://git-scm.com/"
 
-- name: C++
-  logo: /images/sections/skills/c++.png
-  summary: "Know basic C/C++ programming. Used for contest programming and problem solving."
+# - name: C++
+#   logo: /images/sections/skills/c++.png
+#   summary: "Know basic C/C++ programming. Used for contest programming and problem solving."

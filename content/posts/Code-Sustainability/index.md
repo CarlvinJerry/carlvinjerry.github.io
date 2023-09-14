@@ -2,8 +2,7 @@
 
 title: "Error Handling: Mastering Python's Exceptional Complexity"
 description: "Mastering Python's Exceptional Complexity for Sustainable Error Handling"
-date: 2023-09-13T06:00:20+06:00
-hero: boat.jpg
+date: 2023-09-14T06:00:20+06:00
 menu:
   sidebar:
     name: Exception Handling in Python
@@ -12,6 +11,7 @@ menu:
     weight: 10
 tags: ["Python", "Exceptions", "Code Sustainability"]
 categories: ["Code Sustainability"]
+
 ---
 
 #### Introduction
@@ -227,7 +227,7 @@ Cleanup: Closing open files, releasing resources, etc.
 
 <br>
 
-##### Else Blocks
+##### Try/Else Blocks
 
 The `else` block is executed whenever there are no exceptions raised in the preceding try block.
 
@@ -319,3 +319,4 @@ In the next post,  we explore some advanced techniques coupled with best practic
 
 #### Credits
 <a href="https://www.freepik.com/free-vector/computer-repair-illustration_17714407.htm#query=error%20handling&position=3&from_view=search&track=ais">Image by macrovector</a> on Freepik
+<a href="https://storyset.com/people">People illustrations by Storyset</a> on Freepik

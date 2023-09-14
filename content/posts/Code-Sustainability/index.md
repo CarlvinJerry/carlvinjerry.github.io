@@ -31,6 +31,7 @@ Exception handling is a fundamental pillar of programming, and Python in particu
 def my_function(a , b)  #SyntaxError:unexpectedEOFwhileparsing
  print(a + b)
 ```
+<br>
 
 ```python
  File "<ipython-input-2-b7d4e84eafb5>", line 2
@@ -61,6 +62,7 @@ my_function(5,6)
 ```python
 print(undefined_variable)  # NameError: name 'undefined_variable' is not defined
 ```
+<br>
 
 ```python
 ---------------------------------------------------------------------------
@@ -78,6 +80,7 @@ NameError: name 'undefined_variable' is not defined
 ```python
 print("Hello, World!"  # SyntaxError: unexpected EOF while parsing
 ```
+<br>
 
 ```python
 File "<ipython-input-14-dbee6e3a1c9e>", line 1
@@ -99,6 +102,7 @@ def my_function(a , b):
 #Test
 my_function(5, "6") # This will raise a TypeError
 ```
+<br>
 
 ```python
 ---------------------------------------------------------------------------
@@ -129,6 +133,7 @@ x = 5
 y = 0
 result = x / y  # ZeroDivisionError: division by zero
 ```
+<br>
 
 ```python
 ---------------------------------------------------------------------------
@@ -149,6 +154,9 @@ ZeroDivisionError: division by zero
 my_list = [1, 2, 3]
 value = my_list[5]  # IndexError: list index out of range
 ```
+
+<br>
+
 
 ```python
 ---------------------------------------------------------------------------
@@ -215,6 +223,7 @@ finally:
     #handle.close() #Will always run after `try:`
     print("Cleanup: Closing open files, releasing resources, etc.")
 ```
+<br>
 
 ```python
 An error occurred: division by zero
@@ -241,7 +250,9 @@ else:
 ```
 
 <br>
+
 The use of try/except/else allows us to explicitly specify which exceptions our code will handle and which exceptions will be allowed to propagate upward. This approach also aids in reducing the amount of code within the try block, resulting in improved code readability. Assuming we want to load JSON dictionary data from a string and return the value of a random key from it:
+
 ```python
 def load_json_key(data, key):
   try:
@@ -251,6 +262,7 @@ def load_json_key(data, key):
   else:
       return result_dict[key]   #May raise KeyError
 ```
+
 <br>
 
 The `json.loads(data)` function loads JSON data from the data variable. If the data isn't valid JSON, a `ValueError` is raised and passed up to the calling code. Within the `except block`, if a `ValueError` is caught, it's replaced with a `KeyError` using `raise KeyError from e`. This new KeyError then propagates up to the calling code.  

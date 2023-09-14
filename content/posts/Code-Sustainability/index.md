@@ -318,5 +318,4 @@ In the next post,  we explore some advanced techniques coupled with best practic
 <br>
 
 #### Credits
-<a href="https://www.freepik.com/free-vector/computer-repair-illustration_17714407.htm#query=error%20handling&position=3&from_view=search&track=ais">Image by macrovector</a> on Freepik
-<a href="https://storyset.com/people">People illustrations by Storyset</a> on Freepik
+<a href="https://storyset.com/people">People illustrations by Storyset</a> on Freepik.

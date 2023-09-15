@@ -16,7 +16,7 @@ categories: ["Code Sustainability"]
 
 #### Introduction
 
-Exception handling is a fundamental pillar of programming, and Python in particular, excels in this area given it's robust and versatile error management system. A program would terminate immediately it encounters an error,typically taking one of two forms: **syntax errors** and **exceptions**.  In this article, we'll demystify exceptions, distinguishing them from syntax errors, and explore the art of effectively managing them. Finally, we will look at some advanced techniques coupled with best practices for gracefully handling exceptions.
+Exception handling is a fundamental pillar of programming, and Python in particular, excels in this area given its robust and versatile error management system. A program terminates immediately it encounters an error, typically taking one of two forms: **syntax errors** and **exceptions**.  In this article, we'll demystify exceptions, distinguishing them from syntax errors, and explore the art of effectively managing them. Finally, we will look at some advanced techniques coupled with best practices for gracefully handling exceptions.
 
 <br>
 
@@ -42,7 +42,7 @@ SyntaxError: expected ':'
 
 <br>
 
-From the result above, we observe an arrow indicating exactly where the parser ran into the **syntax error**. Fixing the code yields a different result, testing the function with any two integers for example, will give us their sum:
+The arrow in the our output indicates exactly where the parser ran into the **syntax error**. Fixing the code yields a different result. As an example, testing the function with any two integers gives us their sum:
 
 ```python
 #Fixed code

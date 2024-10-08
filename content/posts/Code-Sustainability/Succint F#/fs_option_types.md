@@ -6,8 +6,8 @@ menu:
   sidebar:
     name: Understanding F# Option Type
     identifier: Understanding F# Option Type
-    parent: Succint-F#
-    weight: 9
+    parent: Succint-FSharp
+   # weight: 9
 tags: ["F#", "Functions", "Code Sustainability"]
 categories: ["Code Sustainability"]
 

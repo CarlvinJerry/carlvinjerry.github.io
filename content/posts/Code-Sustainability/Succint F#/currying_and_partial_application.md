@@ -7,8 +7,8 @@ menu:
   sidebar:
     name: Currying and Partial Application
     identifier: Currying and Partial Application
-    parent: Succint-F#
-    weight: 10
+    parent: Succint-FSharp
+    #weight: 10
 tags: ["F#", "Functions", "Code Sustainability"]
 categories: ["Code Sustainability"]
 ---

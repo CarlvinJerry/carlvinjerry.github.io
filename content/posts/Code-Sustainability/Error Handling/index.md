@@ -6,8 +6,8 @@ date: 2023-09-14T06:00:20+06:00
 menu:
   sidebar:
     name: Exception Handling in Python
-    identifier: Code-Sustainability-python-error-handling
-    parent: Code-Sustainability
+    identifier: Exception Handling
+    parent: Error Handling
     weight: 10
 tags: ["Python", "Exceptions", "Code Sustainability"]
 categories: ["Code Sustainability"]

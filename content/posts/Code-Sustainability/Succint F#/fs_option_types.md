@@ -1,6 +1,6 @@
 ---
 
-title: "Enhancing Code Maintainability with F# Option Types"
+title: "Enhancing Code Maintainability with F# Option Type"
 #description: A deep dive into currying and partial application in F# with examples and use cases in functional programming.
 date: 2024-09-17T08:06:25+06:00
 #canonical: https://www.innova.co.ke/currying-and-partial-application/
@@ -8,14 +8,14 @@ menu:
   sidebar:
     name: Understanding F# Option Type
     identifier: Understanding F# Option Type
-    parent: Succint F#
+    parent: Succint-F#
     weight: 10
 tags: ["F#", "Functions", "Code Sustainability"]
 categories: ["Code Sustainability"]
 
 ---
 
-# Enhancing Code Maintainability with F# Option Types
+# Enhancing Code Maintainability with F# Option Type
 
 A common case in programming is handling variables that might or might not hold a value. The C# language for example, uses `Nullable<T>` to represent such cases. This enables you to declare variables as nullables that would otherwise not be assigned to Nulls (e.g a `float` or an `int`). Handling these null references in languages like C# or Java can often lead to bugs. A clean and powerful solution to this problem is provided in F#: the `Option` type.
 <br>

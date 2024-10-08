@@ -7,7 +7,7 @@ menu:
   sidebar:
     name: Exception Handling in Python
     identifier: Exception Handling
-    parent: Error Handling
+    parent: Error-Handling
     weight: 10
 tags: ["Python", "Exceptions", "Code Sustainability"]
 categories: ["Code Sustainability"]

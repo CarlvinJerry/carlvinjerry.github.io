@@ -1,5 +1,4 @@
 ---
-
 title: "Currying and Partial Application in F#"
 description: A deep dive into currying and partial application in F# with examples and use cases in functional programming.
 date: 2024-10-07T08:06:25+06:00
@@ -8,13 +7,11 @@ menu:
   sidebar:
     name: Currying and Partial Application
     identifier: Currying and Partial Application
-    parent: Succint F#
+    parent: Succint-F#
     weight: 10
 tags: ["F#", "Functions", "Code Sustainability"]
 categories: ["Code Sustainability"]
-
 ---
-
 
 
 ## Enhancing Code Maintainability with Currying and Partial Application (F#)

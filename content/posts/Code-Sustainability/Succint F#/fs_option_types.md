@@ -1,15 +1,13 @@
 ---
 
 title: "Enhancing Code Maintainability with F# Option Type"
-#description: A deep dive into currying and partial application in F# with examples and use cases in functional programming.
 date: 2024-09-17T08:06:25+06:00
-#canonical: https://www.innova.co.ke/currying-and-partial-application/
 menu:
   sidebar:
     name: Understanding F# Option Type
     identifier: Understanding F# Option Type
     parent: Succint-F#
-    weight: 10
+    weight: 9
 tags: ["F#", "Functions", "Code Sustainability"]
 categories: ["Code Sustainability"]
 

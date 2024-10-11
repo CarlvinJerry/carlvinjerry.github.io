@@ -1,6 +1,6 @@
 ---
 
-title: "Error Handling: Mastering Python's Exceptional Complexity"
+title: "Error Handling V2: Mastering Python's Exceptional Complexity V2"
 description: "Mastering Python's Exceptional Complexity for Sustainable Error Handling"
 date: 2023-09-14T06:00:20+06:00
 menu:
@@ -14,7 +14,7 @@ categories: ["Code Sustainability"]
 
 ---
 
-#### Introduction
+#### V2  V2 Introduction
 
 Exception handling is a fundamental pillar of programming, and Python in particular, excels in this area given its robust and versatile error management system. A program terminates immediately it encounters an error, typically taking one of two forms: **syntax errors** and **exceptions**.  In this article, we'll demystify exceptions, distinguishing them from syntax errors, and explore the art of effectively managing them. Finally, we will look at some advanced techniques coupled with best practices for gracefully handling exceptions.
 

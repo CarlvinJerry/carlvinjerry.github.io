@@ -18,6 +18,8 @@ categories: ["Code Sustainability"]
  
 Traditionally, a mathematical function may only accept one input at a time. F# however handles the case above by leveraging **currying** and **partial** application to enable functions to appear to take multiple parameters. This enhances flexibility and promotes a functional programming style that emphasizes re-usability and composability. While they are often discussed together, they serve distinct purposes almost in a complementary manner. We illustrate these two concepts and their application below.  
 
+<br> 
+
 ### What is Currying?
 
 Currying is a technique that transforms a function that takes multiple arguments into a sequence of smaller/separate functions, each taking a single argument. Put simply, Currying allows you to call a function with fewer arguments than it expects, returning a new function that takes the remaining arguments.

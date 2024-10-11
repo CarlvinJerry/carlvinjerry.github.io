@@ -13,6 +13,8 @@ categories: ["Code Sustainability"]
 
 ---
 A common case in programming is handling variables that might or might not hold a value. The C# language for example, uses `Nullable<T>` to represent such cases. This enables you to declare variables as nullables that would otherwise not be assigned to Nulls (e.g a `float` or an `int`). Handling these null references in languages like C# or Java can often lead to bugs. A clean and powerful solution to this problem is provided in F#: the `Option` type.
+
+<br>
 <br>
 
 ### What is the F# `Option` Type?
@@ -89,12 +91,3 @@ As you can see, we are still able to elegantly handle operations on optional val
 The `Option` type is integral to eliminating a large class of runtime errors. By forcing developers to handle `None` (the absence of a value), F# eliminates many null reference errors that plague most other languages. A combination of the `Option` type with pattern matching and or higher-order functions provides a clean, safe way to handle values that might not exist. 
 
 The logic can be utilized on more complex arithmetic problems or even tasks such as retrieving data from a database to ensure that every possibility is covered, reducing bugs and making the code easier to maintain.
-
-
-
-
-
-
-
-
-

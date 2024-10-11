@@ -45,8 +45,8 @@ let curriedAdd x =
 then call it...
 
 ```fsharp
-let addFive = curriedAdd 2
-let result = addFive 7  // result is 9
+let addSeven = curriedAdd 2
+let result = addSeven 7  // result is 9
 ```
 In this example, `curriedAdd` is a function that returns another function. The first call provides 2, and the second call provides 7.
 

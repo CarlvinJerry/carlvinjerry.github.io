@@ -1,10 +1,10 @@
 ---
 
-title: "Enhancing Code Maintainability with F# Option Type"
+title: "Enhancing Code Maintainability with the F# 'Option' Type"
 date: 2024-09-17T08:06:25+06:00
 menu:
   sidebar:
-    name: Understanding F# Option Type
+    name: Understanding the F# Option Type
     identifier: Understanding F# Option Type
     parent: Succint-FSharp
    # weight: 9
@@ -12,9 +12,6 @@ tags: ["F#", "Functions", "Code Sustainability"]
 categories: ["Code Sustainability"]
 
 ---
-
-# Enhancing Code Maintainability with F# Option Type
-
 A common case in programming is handling variables that might or might not hold a value. The C# language for example, uses `Nullable<T>` to represent such cases. This enables you to declare variables as nullables that would otherwise not be assigned to Nulls (e.g a `float` or an `int`). Handling these null references in languages like C# or Java can often lead to bugs. A clean and powerful solution to this problem is provided in F#: the `Option` type.
 <br>
 

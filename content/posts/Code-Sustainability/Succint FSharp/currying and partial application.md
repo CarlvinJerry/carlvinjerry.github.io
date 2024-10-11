@@ -8,13 +8,11 @@ menu:
     name: Currying and Partial Application
     identifier: Currying and Partial Application
     parent: Succint-FSharp
-    #weight: 10
+    weight: 10
 tags: ["F#", "Functions", "Code Sustainability"]
 categories: ["Code Sustainability"]
 ---
 
-
-## Enhancing Code Maintainability with Currying and Partial Application (F#)
 
  The mathematical definition of a function can be denoted as a relationship between a set of inputs (the domain) and a single output (the co-domain). When a mathematical function is said to have only one parameter, it typically means that it takes a single value as input. However, in functional programming we build functions that theoretically "defy" this concept by taking in multiple input parameters.
  

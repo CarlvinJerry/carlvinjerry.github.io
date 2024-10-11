@@ -13,7 +13,7 @@ tags: ["Python", "Exceptions", "Code Sustainability"]
 categories: ["Code Sustainability"]
 
 ---
-![image](resources/_gen/images/posts/Code-Sustainability/hero_hu81e4ca4da47b92a3b424ca096bacffd3_2049430_148x0_resize_q75_box.jpg)
+![image](static\images\14723889_Set_of_programmers_02_02.jpg)
 
 #### Introduction
 

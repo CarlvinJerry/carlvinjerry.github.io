@@ -13,6 +13,7 @@ tags: ["Python", "Exceptions", "Code Sustainability"]
 categories: ["Code Sustainability"]
 
 ---
+{{< img src="/posts/shortcodes/boat.jpg" height="200" width="500" float="right" title="A boat at the sea" >}}
 
 #### Introduction
 

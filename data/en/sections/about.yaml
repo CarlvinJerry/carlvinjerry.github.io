@@ -8,7 +8,7 @@ section:
   template: sections/about.html
 
 # your designation
-designation: Quantitative Analyst
+designation: Quantitative Developer
 # your company information
 company:
   name: Innova Ltd.
@@ -19,25 +19,27 @@ company:
 # resume: "files/resume.pdf"
 
 # a summary about you
-summary: ' Welcome to the Beyond Raw Data blog, where passion meets precision in the ever-evolving intersection of finance and technology. 
-With over 7 years of experience as a quantitative analyst and developer, I have embarked on a journey filled with complex challenges and innovative solutions. 
-My toolkit includes R, Python, C#, and F#, each a brushstroke on the canvas of statistical programming in the capital markets domain. 
+summary: 'A passionate quantitative analyst and developer, blending statistical programming and functional programming techniques to drive data-driven innovation in finance. "Beyond Raw Data" explores the dynamic world of technology, data analysis, and software development, sharing insights, projects, and innovations that highlight data-driven problem-solving and emerging tools across industries.'
 
-<br>
-<br>
+# ' Welcome to the Beyond Raw Data blog, where passion meets precision in the ever-evolving intersection of finance and technology. 
+# With over 7 years of experience as a quantitative analyst and developer, I have embarked on a journey filled with complex challenges and innovative solutions. 
+# My toolkit includes R, Python, C#, and F#, each a brushstroke on the canvas of statistical programming in the capital markets domain. 
 
-I possess an unrelenting passion for data, forever seeking the hidden tapestry of patterns and weaving them into robust algorithms that illuminate the path to informed decision-making.
+# <br>
+# <br>
 
-My unique ability to bridge the realms of quantitative analysis and software development empowers businesses to not just survive but thrive in the swiftly shifting market landscape. 
-I am not merely a user of functional programming techniques; I embrace it as a philosophy, a guiding light illuminating my path to creative problem-solving.
+# I possess an unrelenting passion for data, forever seeking the hidden tapestry of patterns and weaving them into robust algorithms that illuminate the path to informed decision-making.
 
-<br> <br>
+# My unique ability to bridge the realms of quantitative analysis and software development empowers businesses to not just survive but thrive in the swiftly shifting market landscape. 
+# I am not merely a user of functional programming techniques; I embrace it as a philosophy, a guiding light illuminating my path to creative problem-solving.
 
-As an enthusiast for continual learning, I stay at the forefront of emerging technologies and eagerly embrace new tools and techniques. 
-This blog is your window into my world of work, projects, and insights. Join me on this exhilarating journey through the data universe, 
-where problems are puzzles waiting to be solved, and innovation is the compass guiding us forward.
+# <br> <br>
 
-Welcome to connect and explore the boundless possibilities together ,because in the world of data, the adventure never ends. '
+# As an enthusiast for continual learning, I stay at the forefront of emerging technologies and eagerly embrace new tools and techniques. 
+# This blog is your window into my world of work, projects, and insights. Join me on this exhilarating journey through the data universe, 
+# where problems are puzzles waiting to be solved, and innovation is the compass guiding us forward.
+
+# Welcome to connect and explore the boundless possibilities together ,because in the world of data, the adventure never ends. '
 
 # your social links
 # give as many as you want. use font-awesome for the icons.
@@ -81,10 +83,11 @@ resourceLinks:
 # You can show your verifiable certificates from https://www.credly.com.
 # You can also show a circular bar indicating the level of expertise on a certain skill
 badges:
-# - type: certification
-#   name: Certified Kubernetes Security Specialist
-#   url: "https://www.credly.com/org/the-linux-foundation/badge/exam-developer-certified-kubernetes-security-specialist"
-#   badge: "https://images.credly.com/size/680x680/images/f4bf92ed-8985-40b2-bc07-2f9308780854/kubernetes-security-specialist-logo-examdev.png"
+- type: certification
+  name: Master of Science in Financial Engineering
+  url: "https://www.credly.com/badges/5146b4e4-9ecf-457e-9492-a6a9afda09cf/public_url"
+  badge: "https://images.credly.com/size/340x340/images/ca5389df-2bbf-4c48-a264-0d9c469f1fc0/image.png"
+
 
 # - type: certification
 #   name: Istio and IBM Cloud Kubernetes Service

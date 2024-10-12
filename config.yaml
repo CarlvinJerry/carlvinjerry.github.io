@@ -153,13 +153,13 @@ params:
       services:
         # Google Analytics
         google:
-          id: 377100809
+          id: 462784605 ##377100809
         # # CounterDev
-        # counterDev:
-        #   id: <your counterdev id>
+        counterDev:
+          id: CarlvinJerry
         # # GoatCounter
-        # goatCounter:
-        #   code: <your goat counter code>
+        goatCounter:
+          code: carlvinjerry
         # # Matomo / Piwik
         # matomo:
         #   instance: matomo.example.com

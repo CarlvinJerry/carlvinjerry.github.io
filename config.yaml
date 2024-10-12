@@ -1,7 +1,7 @@
 baseURL: https://carlvinjerry.github.io
 
 languageCode: en-us
-title: "CARLVIN || BEYOND RAW DATA"
+title: "BEYOND RAW DATA" #"CARLVIN || BEYOND RAW DATA"
 
 # Use Hugo modules to add theme
 module:

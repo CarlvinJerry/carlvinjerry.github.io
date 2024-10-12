@@ -3,7 +3,7 @@
 title: "Mastering Python's Exceptional Complexity"
 description: "Mastering Python's Exceptional Complexity for Sustainable Error Handling"
 date: 2023-09-14T06:00:20+06:00
-hero: static\images\hero.svg
+hero:  static\images\hero.svg
 menu:
   sidebar:
     name: Exception Handling in Python

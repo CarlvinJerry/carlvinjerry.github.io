@@ -207,7 +207,7 @@ params:
         # Uncomment for `mermaid` shortcode.
         mermaid:
           # For config options, see: https://mermaid-js.github.io/mermaid/#/Setup?id=configuration
-          # theme: dark
+          theme: dark
 
     # Enable this to create mathematic expressions using `$$` blocks
     math:

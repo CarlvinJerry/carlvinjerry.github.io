@@ -1,5 +1,7 @@
 module github.com/hugo-toha/hugo-toha.github.io
 
-go 1.19
+go 1.21
 
-require github.com/hugo-toha/toha/v4 v4.0.0-20230127171959-e5fcc95e8b8d // indirect
+toolchain go1.21.13
+
+require github.com/hugo-toha/toha/v4 v4.6.0 // indirect

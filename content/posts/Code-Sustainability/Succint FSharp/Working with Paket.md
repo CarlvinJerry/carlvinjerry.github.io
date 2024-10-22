@@ -1,5 +1,5 @@
 ---
-title: "Dependency management in F# with Paket"
+title: "A Better Way to Manage Dependencies in F#"
 date: 2024-10-22T21:37:25+06:00
 description: Using Paket as an Alternative to NuGet for Dependency Management in F#
 canonical:
@@ -8,14 +8,11 @@ hero: content\posts\Code-Sustainability\Succint FSharp\herr.jpg
 
 
 
-
-
-## A Better Way to Manage Dependencies in F#
-
  The default go-to tool for most .Net developers is NuGet. It simplifies handling dependencies across projects and also provides a central reference point for reusable .Net components. Due to its initial development and growth over time, NuGet poses a few shortcomings evident over the years. As an alternative, specifically for F# developers, <a href="https://fsprojects.github.io/Paket/" target="_blank">**Paket**</a> is an open source dependency manager for .Net projects that was originally built with the primary goal of addressing some of the shortcomings developers encountered when managing dependencies in large and complex projects.
  
  Paket is flexible, powerful and backward-compatible with the NuGet service. This enables developers to continue using already existing NuGet packages on transitioning. With features like transitive dependency handling, tighter version control and centralized dependency definitions, Paket is especially useful for enterprise-scale F# applications that rely on multiple libraries or even different frameworks.
  
+<br>
 
 #### Some challenges with the NuGet client
 
@@ -27,6 +24,7 @@ hero: content\posts\Code-Sustainability\Succint FSharp\herr.jpg
 
 *In-Script referencing —* Referencing NuGet packages from scripts can be challenging since the package path is stored in the project. If a package is updated, your scripts might break unless you're using a tool like VFPT's generated references file to manage it.
 
+<br>
 
 ### Key Advantages of Paket  
 
@@ -51,6 +49,8 @@ Paket solves all of the previously mentioned issues and introduces several new f
 
 Paket has several benefits, particularly for F#. It simplifies dependency management in scripts and doesn't lock you into Visual Studio, allowing you to use other IDEs like Visual Studio Code.
 
+<br>
+
 #### Here are some common Paket commands:
 
 > -`paket update`: Updates your packages to the latest versions from NuGet. Paket selects the highest compatible version and ensures that all dependencies work together.    
@@ -60,7 +60,9 @@ Paket has several benefits, particularly for F#. It simplifies dependency manage
 
 Paket also has a Visual Studio extension that integrates this functionality directly into the IDE.  
 
-### How to Use Paket in F# Projects
+<br>
+
+#### Using Paket in F# Projects
 Let’s walk through a basic example of how to set up Paket in an F# project.
 
 **1.** Install Paket  
@@ -113,8 +115,11 @@ group NetFramework
 framework: net472
 nuget FSharp.Core
 ```
-This setup ensures that your solution correctly manages dependencies across different frameworks.
-### Paket vs. NuGet: When to Use Which?
+This setup ensures that your solution correctly manages dependencies across different frameworks.  
+
+<br>
+
+#### Paket vs. NuGet: When to Use Which?
 Both Paket and NuGet have their strengths, and the choice depends on your project needs.
 
 * Use Paket if:

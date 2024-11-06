@@ -1,4 +1,5 @@
-module github.com/hugo-toha/hugo-toha.github.io
+module github.com/carlvinjerry/carlvinjerry.github.io
+
 
 go 1.21
 

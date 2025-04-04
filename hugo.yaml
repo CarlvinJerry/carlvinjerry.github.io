@@ -1,7 +1,7 @@
-baseURL: https://hugo-toha.github.io
+baseURL: https://carlvinjerry.github.io
 
-languageCode: bn
-title: "John's Blog"
+languageCode: en-us
+title: "CARLVIN M"
 
 # Use Hugo modules to add theme
 module:
@@ -23,7 +23,7 @@ languages:
   en:
     languageCode: en
     languageName: English
-    title: "John's Blog"
+    title: "CARLVIN M"
     weight: 1
   bn:
     languageCode: bn
@@ -70,7 +70,7 @@ params:
     favicon: /images/site/favicon.png
 
   # GitHub repo of your site
-  gitRepo: https://github.com/hugo-toha/hugo-toha.github.io
+  gitRepo: https://github.com/carlvinjerry/carlvinjerry.github.io
   # Default branch of your Git repo
   gitBranch: main
 

@@ -1,7 +1,7 @@
 baseURL: https://carlvinjerry.github.io
 
 languageCode: en-us
-title: "CARLVIN M J2"
+title: "CARLVIN M's portfolio website"
 
 # Use Hugo modules to add theme
 module:
@@ -23,7 +23,7 @@ languages:
   en:
     languageCode: en
     languageName: English
-    title: "CARLVIN M"
+    title: "CARLVIN J M"
     weight: 1
   bn:
     languageCode: bn

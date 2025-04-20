@@ -6,6 +6,8 @@ description: "A deep dive into the world of functional programming and its pract
 
 # Functional Programming: Understanding the Nuances
 
+{{< figure src="/images/fsharp.png" alt="F# Logo" caption="F# - A functional-first programming language" >}}
+
 Functional programming (FP) is more than just a programming paradigm; it's a way of thinking about software development that has gained significant traction in recent years. This post aims to demystify functional programming and explore its practical implications.
 
 ## What is Functional Programming?

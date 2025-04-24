@@ -8,6 +8,7 @@ image: /images/fsharp2.png
 categories: ["Programming", "Languages", "F#"]
 tags: ["functional programming", "language features"]
 hero: fsharp2.png
+readingTime: true
 ---
 
 Functional programming (FP) is more than just a programming paradigm; it's a way of thinking about software development that has gained significant traction in recent years. This post aims to demystify functional programming and explore its practical implications.

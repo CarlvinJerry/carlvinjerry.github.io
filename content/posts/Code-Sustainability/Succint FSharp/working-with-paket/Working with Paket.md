@@ -3,14 +3,13 @@ title: "A Better Way to Manage Dependencies in F#"
 date: 2024-10-22T21:37:25+06:00
 description: Using Paket as an Alternative to NuGet for Dependency Management in F#
 canonical: https://carlvinjerry.com/posts/code-sustainability/succint-fsharp/working-with-paket/
-hero: herr.jpg
-image: /images/herr.jpg
+hero: packages.jpg
+image: /images/packages.jpg
 menu:
   sidebar:
     name: A Better Way to Manage Dependencies in F#
     identifier: A Better Way to Manage Dependencies in F#
     parent: Succint-FSharp
-    weight: 10
 tags:
   - F#
   - Paket
@@ -20,8 +19,6 @@ tags:
   - Software Development
   - Project Management
 ---
-
-
 
  The default go-to tool for most .Net developers is NuGet. It simplifies handling dependencies across projects and also provides a central reference point for reusable .Net components. Due to its initial development and growth over time, NuGet poses a few shortcomings evident over the years. As an alternative, specifically for F# developers, <a href="https://fsprojects.github.io/Paket/" target="_blank">**Paket**</a> is an open source dependency manager for .Net projects that was originally built with the primary goal of addressing some of the shortcomings developers encountered when managing dependencies in large and complex projects.
  

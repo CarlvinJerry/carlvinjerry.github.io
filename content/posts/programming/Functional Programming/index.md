@@ -2,13 +2,13 @@
 title: "Functional Programming"
 date: 2023-04-20T19:17:21+03:00
 description: "A deep dive into the world of functional programming and its practical implications"
-featured: true
-hero: fsharp.png
+
 parent: functional-programming
 readingTime: true
-image: /images/functional.jpg
+image: /images/fsharp.png
 categories: ["Programming", "Languages", "F#"]
 tags: ["functional programming", "language features"]
+hero: fsharp.png
 ---
 
 

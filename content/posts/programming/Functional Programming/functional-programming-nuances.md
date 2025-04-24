@@ -1,12 +1,17 @@
 ---
-title: "Functional Programming: Understanding the Nuances"
-date: 2025-04-20T19:17:21+03:00
+title: "Functional Programming"
+date: 2023-04-20T19:17:21+03:00
 description: "A deep dive into the world of functional programming and its practical implications"
+featured: true
+hero: fsharp.png
+parent: functional-programming
+readingTime: true
+image: /images/functional.jpg
+categories: ["Programming", "Languages", "F#"]
+tags: ["functional programming", "language features"]
 ---
 
-# Functional Programming: Understanding the Nuances
 
-{{< figure src="/images/fsharp.png" alt="F# Logo" caption="F# - A functional-first programming language" >}}
 
 Functional programming (FP) is more than just a programming paradigm; it's a way of thinking about software development that has gained significant traction in recent years. This post aims to demystify functional programming and explore its practical implications.
 

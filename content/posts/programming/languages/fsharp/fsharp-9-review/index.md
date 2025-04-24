@@ -11,7 +11,6 @@ menu:
     name: fsharp-9-review
     identifier: fsharp-9-review
     parent: fsharp
-    weight: 30
 hero: fsharp.png
 mermaid: true
 ---

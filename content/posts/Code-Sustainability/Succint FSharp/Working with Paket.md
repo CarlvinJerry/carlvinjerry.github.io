@@ -3,7 +3,7 @@ title: "A Better Way to Manage Dependencies in F#"
 date: 2024-10-22T21:37:25+06:00
 description: Using Paket as an Alternative to NuGet for Dependency Management in F#
 canonical: https://carlvinjerry.com/posts/code-sustainability/succint-fsharp/working-with-paket/
-hero: \herr.jpg
+hero: herr.jpg
 menu:
   sidebar:
     name: A Better Way to Manage Dependencies in F#

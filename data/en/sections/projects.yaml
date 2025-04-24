@@ -21,15 +21,15 @@ buttons:
 
 # your projects
 projects:
-- name: Kubernetes
-  logo: /images/sections/projects/kubernetes.png
-  role: Contributor
-  timeline: "March 2018 - Present"
-  repo: https://github.com/kubernetes/kubernetes # If your project is a public repo on GitHub, then provide this link. it will show star count.
+- name: Impact of ESG factors on FDI in East Africa
+  logo: # /images/sections/skills/pyhton.png
+  role: Researcher & Developer
+  timeline: "Jun 2024 - Sep 2024"
+  repo: https://github.com/CarlvinJerry/MScFE-Capstone-project/ # If your project is a public repo on GitHub, then provide this link. it will show star count.
   #url: ""  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
-  summary: Production-Grade Container Scheduling and Management.
-  tags: ["professional", "kubernetes", "cloud"]
-
+  summary: This research examines the impact of ESG factors on FDI inflows in East African developing markets, using panel data analysis. Two regression models (pooled and fixed-effects) are used to assess the correlation between sustainability factors and FDI, helping host countries identify key ESG drivers of FDI growth.
+  tags: ["ESG", "academic", "FDI"]
+  
 - name: Tensorflow
   logo: /images/sections/projects/tensorflow.png
   role: Developer

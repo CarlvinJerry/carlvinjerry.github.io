@@ -8,7 +8,7 @@ categories: ["Programming", "Languages", "F#",  statistical-modeling, financial-
 tags: ["functional programming", "F#", "language features"]
 menu:
   sidebar:
-    name: monads
+    name: Functors and Monads in F#
     identifier: Functors-and-monads-in-F#
     parent: functional-programming
 hero: monads.jpg

@@ -13,6 +13,7 @@ menu:
     parent: functional-programming
 hero: monads.jpg
 summary: This blog post demystifies functors and monads in F# through real-world statistical and financial modeling examples. Learn how Option, Result, and Async types simplify handling missing data, errors, and asynchronous computations, enabling robust and composable code for data processing, risk modeling, and Monte Carlo simulations.
+canonical: "https://blogs.innova.co.ke/monads/"
 ---
 
 In functional programming, **functors** and **monads** are powerful abstractions for working with computations in a composable, type-safe way. Functors allow us to map functions over wrapped values, while monads extend this idea to chain computations with context. In this technical blog post, we’ll explore both concepts using F# and ground them in practical examples from statistical and financial modeling. We’ll use F#’s computation expressions and types like `Option`, `Result`, and `Async` to illustrate how functors and monads simplify complex workflows.

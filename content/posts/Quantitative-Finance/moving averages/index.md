@@ -1,5 +1,6 @@
 ---
 title: Simple Moving Average Crossover Strategy in F#
+date: 2025-04-02T21:37:25+06:00
 author: Carlvin M Jerry
 categories: Quantitative Modelling
 image: /images/movingavgs.png

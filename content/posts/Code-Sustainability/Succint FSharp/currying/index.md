@@ -3,7 +3,8 @@ title: "Currying and Partial Application in F#"
 description: A deep dive into currying and partial application in F# with examples and use cases in functional programming.
 date: 2024-10-07T08:06:25+06:00
 canonical: https://www.innova.co.ke/currying-and-partial-application/
-hero: ![Alt text](resources\_gen\images\jerry2_hu78bb2e6f6e3949f4609e18597f72492a_158240_148x148_fit_q75_box.jpg"a title") 
+hero: partial.jpg 
+image: /images/partial.jpg
 menu:
   sidebar:
     name: Currying and Partial Application

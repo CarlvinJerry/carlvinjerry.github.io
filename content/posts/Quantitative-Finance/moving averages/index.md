@@ -8,7 +8,7 @@ menu:
     name: Simple Moving Average
     identifier: movingavgs
     parent: quant-finance
-hero: movingavgs.jpg
+hero: movingavgs.png
 tags: [Algorithmic Trading,Quantitative Finance,Time Series Analysis]
 description: "Learn how to build a Moving Average Crossover trading strategy in F#—a beginner-friendly guide to algorithmic trading. This step-by-step tutorial breaks down the math behind trend-following signals, implements a clean F# pipeline for backtesting, and explains key concepts like window sizing, thresholds, and risk management. Perfect for quant developers exploring functional programming or traders dipping their toes into systematic strategies. Includes ready-to-run code examples and practical extensions to adapt the strategy to real markets."
 canonical: "https://blogs.innova.co.ke/moving-averages/"

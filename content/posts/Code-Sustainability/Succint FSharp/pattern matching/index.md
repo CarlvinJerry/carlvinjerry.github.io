@@ -9,7 +9,7 @@ menu:
     name: Pattern Matching in F#
     identifier: pattern-matching
     parent: Succint-FSharp
-hero: /images/patterns.jpg
+hero: patterns.jpg
 canonical: "https://blogs.innova.co.ke/pattern-matching/" 
 tags:
   - F#

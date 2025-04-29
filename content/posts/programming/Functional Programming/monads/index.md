@@ -9,7 +9,7 @@ tags: ["functional programming", "F#", "language features"]
 menu:
   sidebar:
     name: monads
-    identifier: monads
+    identifier: Functors-and-monads-in-F#
     parent: functional-programming
 hero: monads.jpg
 summary: This blog post demystifies functors and monads in F# through real-world statistical and financial modeling examples. Learn how Option, Result, and Async types simplify handling missing data, errors, and asynchronous computations, enabling robust and composable code for data processing, risk modeling, and Monte Carlo simulations.

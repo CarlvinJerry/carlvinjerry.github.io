@@ -8,7 +8,7 @@ categories: ["Programming", "Languages", "F#"]
 tags: ["functional programming", "F#", "language features"]
 menu:
   sidebar:
-    name: Functional Programming
+    name: Functional Programming Nuances
     identifier: Functional_Programming
     parent: functional-programming
 hero: functional.jpg

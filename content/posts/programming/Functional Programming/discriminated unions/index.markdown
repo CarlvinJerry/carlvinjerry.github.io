@@ -7,6 +7,7 @@ readingTime: true
 image: /images/discUnions.jpg
 categories: ["Programming", "Languages", "F#", "Domain-Driven Design", "Financial Modeling"]
 tags: ["functional programming", "F#", "language features", "Discriminated Unions"]
+featured: true
 menu:
   sidebar:
     name: Discriminated Unions in F#
@@ -269,4 +270,4 @@ Modeling relationships in F# using discriminated unions provides a powerful appr
 
 >As Isaac Abraham notes, F#’s functional-first approach, combined with tools like DUs, leads developers to a “pit of success,” where the language’s design naturally guides you toward writing better code.
 
-For further exploration, check out the companion code repository for *Get Programming with F#* on GitHub (https://github.com/isaacabraham/get-programming-fsharp) or dive into Abraham’s *F# in Action* for more advanced domain-modelling examples. May your models be as robust as your F# types!
+For further exploration, check out the companion code repository for *Get Programming with F#* on <a href="https://github.com/isaacabraham/get-programming-fsharp" target="_blank">Github</a> or dive into Abraham’s *F# in Action* for more advanced domain-modelling examples. May your models be as robust as your F# types!

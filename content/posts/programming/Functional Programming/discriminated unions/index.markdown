@@ -2,10 +2,10 @@
 title: "Modelling Relationships in F# for Domain-Driven Design"
 date: 2025-07-21T08:06:25+06:00
 description: Learn how to use F#'s discriminated unions to model complex relationships in domain-driven design, with practical examples in financial data modeling.
-summary: This post explores F#'s discriminated unions for domain-driven design, focusing on financial systems. Through examples like modeling financial instruments, transactions, and account types, we demonstrate how to encode business rules, ensure type safety, and simplify complex domains using F#. 
+summary: This post explores F#'s discriminated unions for domain-driven design, focusing on financial systems. Through examples like modeling financial instruments, transactions, and account types, we demonstrate how to encode business rules, ensure type safety, and simplify complex domains using F#.
 readingTime: true
 image: /images/discUnions.jpg
-categories: ["Programming", "Languages", "F#",  domain-driven design, financial-modeling]
+categories: ["Programming", "Languages", "F#", "Domain-Driven Design", "Financial Modeling"]
 tags: ["functional programming", "F#", "language features", "Discriminated Unions"]
 menu:
   sidebar:
@@ -15,8 +15,6 @@ menu:
 hero: discUnions.jpg
 canonical:
 ---
-
-
 
 As a functional-first programming language,  F# excels at creating robust, maintainable, and expressive domain models. This is handy, particularly for complex domains like financial data or financial systems. In *Get Programming with F#: A Guide for .NET Developers* by Isaac Abraham, Lesson 21- "Modeling Relationships in F#," introduces the use of **discriminated unions** (DUs) as a flexible and type-safe tool for modeling relationships between data entities. This blog post explores the concepts from this lesson, focusing on how to apply discriminated unions to domain specific development. Our focus is on cases in financial data domains, such as modeling financial instruments, transactions, or account types with detailed examples inspired by the book’s approach. We’ll dive into practical scenarios, demonstrating how F#’s type system and DUs can encode business rules, ensure correctness, and simplify domain driven modeling.
 
@@ -32,6 +30,7 @@ F#’s discriminated unions offer a more elegant solution by allowing you to def
 - **Immutable by default**: This aligns with functional programming principles, ensuring data consistency in applications where immutability is critical for auditability.
 
 In *Get Programming with F#*, Isaac Abraham emphasizes that DUs are a cornerstone of F#’s ability to model relationships effectively. Let’s explore this with financial data examples, drawing on the principles from Lesson 21.  
+
 
 ----------------------------------------
 

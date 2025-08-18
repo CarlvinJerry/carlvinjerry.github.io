@@ -118,7 +118,6 @@ The `FSharp.Plotly` code generates an interactive line plot of the path as shown
 ![](stockpricepath.png)
 
 
-
 ### 2. ESG Application: Renewable Energy Adoption (Multiple Paths)
 
 In ESG, GBM can model renewable energy adoption (e.g., installed capacity in gigawatts), where $$ (S_t) $$ is the capacity, $$ (\mu) $$ is the growth rate (policy or technology-driven), and $$ (\sigma) $$ is volatility (market or regulatory uncertainty). Below is Python code to simulate 100 paths and compute statistics.

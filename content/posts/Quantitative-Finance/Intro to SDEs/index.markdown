@@ -11,7 +11,7 @@ hero: sdes.jpg
 useMath: true
 menu:
   sidebar:
-    name: intro-to-sdes
+    name: Introduction to SDEs
     identifier: intro-to-sdes 
     parent: quant-finance
 ---

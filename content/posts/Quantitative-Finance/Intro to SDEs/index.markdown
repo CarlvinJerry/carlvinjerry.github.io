@@ -41,7 +41,7 @@ For an SDE like $$ dX_t = a(X_t, t) dt + b(X_t, t) dW_t $$, the Euler-Maruyama m
 
 $$ X_{t+\Delta t} = X_t + a(X_t, t) \Delta t + b(X_t, t) \Delta W_t $$
 
-Here, $$ \Delta W_t $$ is a random increment drawn from a normal distribution with **mean 0** and **variance $$ \Delta t $$**, simulating **Brownian motion**. By repeating this over many time steps, we generate a path that approximates the SDE’s solution. The method is straightforward but may require small time steps for accuracy as larger steps can introduce errors (explored in later chapters of the book).
+Here, $$ (\Delta W_t) $$ is a random increment drawn from a normal distribution with **mean 0** and **variance $$ (\Delta t) $$**, simulating **Brownian motion**. By repeating this over many time steps, we generate a path that approximates the SDE’s solution. The method is straightforward but may require small time steps for accuracy as larger steps can introduce errors (explored in later chapters of the book).
 
 
 This method is ideal for beginners because it’s intuitive and easy to implement, yet powerful enough for real-world applications like stock price modeling or ESG scenarios. Let’s see it in action with two examples.
@@ -57,7 +57,7 @@ This models systems with proportional growth and volatility, perfect for stock p
 
 ### 1. Stock Price Simulation (Single Path)
 
-In finance, GBM models stock prices, where $$ S_t $$ is the price, $$ \mu $$ is the expected return, and $$ \sigma $$ is volatility. Below is F# code to simulate a single stock price path using Euler-Maruyama.
+In finance, GBM models stock prices, where $$ (S_t) $$ is the price, $$ (\mu) $$ is the expected return, and $$ (\sigma) $$ is volatility. Below is F# code to simulate a single stock price path using Euler-Maruyama.
 
 ```fsharp
 open System
@@ -117,9 +117,11 @@ The `FSharp.Plotly` code generates an interactive line plot of the path as shown
 
 ![](stockpricepath.png)
 
+
+
 ### 2. ESG Application: Renewable Energy Adoption (Multiple Paths)
 
-In ESG, GBM can model renewable energy adoption (e.g., installed capacity in gigawatts), where $$ S_t $$ is the capacity, $$ \mu $$ is the growth rate (policy or technology-driven), and $$ \sigma $$ is volatility (market or regulatory uncertainty). Below is Python code to simulate 100 paths and compute statistics.
+In ESG, GBM can model renewable energy adoption (e.g., installed capacity in gigawatts), where $$ (S_t) $$ is the capacity, $$ (\mu) $$ is the growth rate (policy or technology-driven), and $$ (\sigma) $$ is volatility (market or regulatory uncertainty). Below is Python code to simulate 100 paths and compute statistics.
 
 ```python
 import numpy as np

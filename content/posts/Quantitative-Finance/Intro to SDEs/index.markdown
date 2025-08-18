@@ -7,7 +7,6 @@ tags: [ SDEs, Euler-Maruyama, F#,Renewable Energy,Financial Modeling]
 description:  Learn how stochastic differential equations (SDEs) model randomness in systems like stock prices prediction and renewable energy adoption, with practical F# examples using the Euler-Maruyama method.
 summary: This post introduces SDEs and the Euler-Maruyama method, demonstrating their application in finance and ESG modeling. Through F# simulations of stock prices and renewable energy adoption, we show how to implement and visualize SDE solutions, highlighting their importance for handling uncertainty.
 readingTime: true
-image: /images/sdes.jpg
 hero: sdes.jpg
 useMath: true
 menu:

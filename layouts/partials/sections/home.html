@@ -217,6 +217,7 @@
               <label for="consultation-context" class="form-label">Project context</label>
               <select id="consultation-context" class="form-select" name="Project context">
                 <option>Data-driven system</option>
+                <option>Dashboard or data app</option>
                 <option>Quant research or modelling</option>
                 <option>Analytics workflow</option>
                 <option>Technical advisory</option>
@@ -233,12 +234,13 @@
           </div>
           <div class="consultation-submit-row">
             <button type="submit" class="btn consultation-submit">Send Email</button>
-            <span class="consultation-note">Opens your email app with the form details.</span>
+            <span class="consultation-note">Opens your email app with the form details. Prefer a quick conversation? Call or WhatsApp me instead.</span>
           </div>
         </form>
         <div class="consultation-direct">
           <a href="mailto:{{ .email }}">Email: {{ .email }}</a>
           <a href="tel:{{ .phone }}">Call: {{ .phoneLabel }}</a>
+          <a href="{{ .whatsapp }}" target="_blank" rel="noopener">WhatsApp: {{ .phoneLabel }}</a>
         </div>
       </div>
     </div>

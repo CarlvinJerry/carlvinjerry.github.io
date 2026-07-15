@@ -19,7 +19,7 @@
         <button class="work-action primary" type="button" data-bs-toggle="modal" data-bs-target="#consultation-modal">{{ . }}</button>
         {{ end }}
         {{ with .cta.secondary }}
-        <a class="work-action secondary" href="#recent-posts">{{ . }}</a>
+        <a class="work-action secondary" href="{{ "posts" | relURL }}">{{ . }}</a>
         {{ end }}
       </div>
       {{ with $author.consultation }}

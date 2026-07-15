@@ -768,6 +768,81 @@ html[data-theme="light"] .work-action.secondary:focus {
   color: #0f766e;
 }
 
+html[data-theme="light"] .modal-backdrop.show {
+  opacity: 0.34;
+}
+
+html[data-theme="light"] .consultation-modal .modal-content {
+  border-color: rgba(15, 23, 42, 0.14);
+  background: rgba(255, 255, 255, 0.97);
+  color: var(--recursion-light-ink);
+  box-shadow: 0 32px 90px rgba(15, 23, 42, 0.22);
+}
+
+html[data-theme="light"] .consultation-modal .modal-header {
+  border-bottom-color: rgba(15, 23, 42, 0.12);
+  background:
+    linear-gradient(135deg, rgba(8, 127, 149, 0.12), rgba(255, 255, 255, 0.72)),
+    #f8fafc;
+}
+
+html[data-theme="light"] .consultation-modal .modal-title {
+  color: var(--recursion-light-ink);
+}
+
+html[data-theme="light"] .consultation-kicker {
+  color: #a16207;
+}
+
+html[data-theme="light"] .consultation-intro,
+html[data-theme="light"] .consultation-note {
+  color: var(--recursion-light-muted);
+}
+
+html[data-theme="light"] .consultation-form .form-label {
+  color: var(--recursion-light-ink);
+}
+
+html[data-theme="light"] .consultation-form .form-control,
+html[data-theme="light"] .consultation-form .form-select {
+  border-color: rgba(15, 23, 42, 0.18);
+  background: #ffffff;
+  color: var(--recursion-light-ink);
+}
+
+html[data-theme="light"] .consultation-form .form-control:focus,
+html[data-theme="light"] .consultation-form .form-select:focus {
+  border-color: rgba(8, 127, 149, 0.62);
+  background: #ffffff;
+  color: var(--recursion-light-ink);
+  box-shadow: 0 0 0 0.2rem rgba(8, 127, 149, 0.14);
+}
+
+html[data-theme="light"] .consultation-form .form-control::placeholder {
+  color: #64748b;
+}
+
+html[data-theme="light"] .consultation-direct {
+  border-top-color: rgba(15, 23, 42, 0.12);
+}
+
+html[data-theme="light"] .consultation-direct a {
+  border-color: rgba(15, 23, 42, 0.14);
+  background: #f8fafc;
+  color: #0f766e;
+}
+
+html[data-theme="light"] .consultation-direct a:hover,
+html[data-theme="light"] .consultation-direct a:focus {
+  border-color: rgba(8, 127, 149, 0.42);
+  background: #eef4fb;
+  color: #075569;
+}
+
+html[data-theme="light"] .consultation-modal .btn-close-white {
+  filter: none;
+}
+
 html[data-theme="light"] .recent-posts-section .card,
 html[data-theme="light"] .content-section .post-card .card {
   border-color: var(--recursion-light-border);

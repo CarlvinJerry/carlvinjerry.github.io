@@ -2,6 +2,7 @@
 
 title: "Enhancing Code Maintainability with the F# 'Option' Type"
 date: 2024-09-17T08:06:25+06:00
+description: "A practical look at F# option types for safer, more maintainable code."
 image: /images/maintenance.jpg
 hero: maintenance.jpg
 menu:

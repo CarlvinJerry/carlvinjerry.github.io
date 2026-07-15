@@ -1,4 +1,4 @@
-name: "Theme Update"
+﻿name: "Theme Update"
 
 on:
   schedule:
@@ -8,12 +8,12 @@ jobs:
   update-theme:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4.1.1
+      - uses: actions/checkout@v7
         with:
           ref: develop
 
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
           node-version: 24
 
@@ -50,3 +50,4 @@ jobs:
           base: develop
           title: Update theme
           labels: theme-update
+

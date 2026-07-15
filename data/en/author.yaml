@@ -4,9 +4,9 @@ nickname: "RΞCURSION"
 consultation:
   label: "Work With Me"
   email: "carlvinjerry@gmail.com"
-  phone: "+254747942588"
-  phoneLabel: "+254 (0)747 942 588"
-  whatsapp: "https://wa.me/254747942588?text=Hello%20Carlvin%2C%20I%27d%20like%20to%20discuss%20a%20project."
+  phone: "+254747942585"
+  phoneLabel: "+254 (0)747 942 585"
+  whatsapp: "https://wa.me/254747942585?text=Hello%20Carlvin%2C%20I%27d%20like%20to%20discuss%20a%20project."
   intro: "I help teams turn messy data, market questions, and operational uncertainty into useful systems: quantitative research, risk models, analytics workflows, F#/.NET tooling, Python, R Shiny, and Django dashboards, and decision-support pipelines."
 # greeting message before your name. it will default to "Hi! I am" if not provided
 #greeting: "Hi, I am"
@@ -14,7 +14,7 @@ image: "images/author/j5.jpg"
 # give your some contact information. they will be used in the footer
 contactInfo:
   email: "carlvinjerry@gmail.com | cmwange@beyondrawdata.co.ke"
-  phone: "+254 (0)747 942 588"
+  phone: "+254 (0)747 942 585"
   github: carlvinjerry
   linkedin: carlvinmwange
   researchgate: carlvinmwange

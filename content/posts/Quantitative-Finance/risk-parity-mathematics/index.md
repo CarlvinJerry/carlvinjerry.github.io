@@ -3,6 +3,7 @@ title: "The Mathematics of Allocating Risk Instead of Capital"
 date: 2026-06-16T09:00:00+03:00
 author: Carlvin M Jerry
 description: "A quantitative finance walkthrough of risk parity, equal risk contribution, covariance estimation, leverage, and the practical limits of allocating portfolio risk instead of capital."
+summary: "This post explains risk parity through equal risk contribution, showing why capital weights can hide concentrated portfolio risk. We derive the core variance and risk contribution formulas, compare ERC with inverse-volatility weighting, and discuss covariance estimation, leverage, and regime risk."
 categories: ["Quantitative Finance", "Portfolio Construction", "Risk Management"]
 tags: ["Risk Parity", "Equal Risk Contribution", "Portfolio Optimization", "Covariance Matrix", "Asset Allocation", "Risk Budgeting", "Hierarchical Risk Parity", "Quantitative Finance"]
 image: risk-parity-cover.jpg

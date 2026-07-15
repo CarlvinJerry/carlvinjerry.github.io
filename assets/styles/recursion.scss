@@ -344,6 +344,7 @@
   font-size: clamp(1.8rem, 4vw, 3rem);
   font-weight: 800;
   line-height: 1.08;
+  animation: workFadeUp 680ms ease both;
 }
 
 .work-with-me-intro > p:not(.section-eyebrow):not(.work-contact-note) {
@@ -351,6 +352,7 @@
   color: var(--recursion-muted);
   font-size: 1.04rem;
   line-height: 1.75;
+  animation: workFadeUp 680ms ease 90ms both;
 }
 
 .work-with-me-actions {
@@ -358,6 +360,7 @@
   flex-wrap: wrap;
   gap: 0.65rem;
   margin-top: 1.25rem;
+  animation: workFadeUp 680ms ease 160ms both;
 }
 
 .work-action {
@@ -432,6 +435,8 @@
 }
 
 .work-capability {
+  position: relative;
+  isolation: isolate;
   min-height: 11rem;
   border: 1px solid rgba(216, 245, 247, 0.13);
   border-radius: 8px;
@@ -439,6 +444,48 @@
   background:
     linear-gradient(180deg, rgba(24, 184, 200, 0.08), rgba(15, 23, 42, 0.14)),
     rgba(15, 23, 42, 0.32);
+  box-shadow: 0 18px 42px rgba(2, 6, 23, 0.16);
+  transform: translateY(0);
+  transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease, background 180ms ease;
+  animation: workFadeUp 620ms ease both;
+}
+
+.work-capability:nth-child(2) {
+  animation-delay: 80ms;
+}
+
+.work-capability:nth-child(3) {
+  animation-delay: 160ms;
+}
+
+.work-capability:nth-child(4) {
+  animation-delay: 240ms;
+}
+
+.work-capability::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  background: radial-gradient(circle at 22% 0%, rgba(229, 180, 84, 0.2), transparent 42%);
+  opacity: 0;
+  transition: opacity 180ms ease;
+}
+
+.work-capability:hover,
+.work-capability:focus-within {
+  border-color: rgba(24, 184, 200, 0.46);
+  background:
+    linear-gradient(180deg, rgba(24, 184, 200, 0.12), rgba(15, 23, 42, 0.2)),
+    rgba(15, 23, 42, 0.44);
+  box-shadow: 0 24px 58px rgba(2, 6, 23, 0.28);
+  transform: translateY(-5px);
+}
+
+.work-capability:hover::before,
+.work-capability:focus-within::before {
+  opacity: 1;
 }
 
 .work-capability h3 {
@@ -452,6 +499,18 @@
   color: var(--recursion-muted);
   font-size: 0.96rem;
   line-height: 1.6;
+}
+
+@keyframes workFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .recent-posts-section .post-card,
@@ -703,5 +762,26 @@ footer {
   .recent-posts-section .card-body,
   .content-section .post-card .card-body {
     min-height: 220px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .work-with-me-intro h2,
+  .work-with-me-intro > p:not(.section-eyebrow):not(.work-contact-note),
+  .work-with-me-actions,
+  .work-capability {
+    animation: none;
+  }
+
+  .work-action,
+  .work-capability {
+    transition: none;
+  }
+
+  .work-action:hover,
+  .work-action:focus,
+  .work-capability:hover,
+  .work-capability:focus-within {
+    transform: none;
   }
 }

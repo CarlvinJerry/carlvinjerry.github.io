@@ -1,29 +1,23 @@
 # Copyright Notice
-copyright: © 2020 Copyright.
+copyright: "Copyright 2026 Carlvin Mwange Jerry."
 
-# A disclaimer notice for the footer. Make sure you have set "params.footer.disclaimer.enable: true" in your `config.yaml` file.
-disclaimer: "This theme is under MIT license. So, you can use it for non-commercial, commercial, or private uses.
-You can modify or distribute the theme without requiring any permission from the theme author.
-However, the theme author does not provide any warranty or takes any liability for any issue with the theme."
+# A disclaimer notice for the footer. Make sure you have set "params.footer.disclaimer.enable: true" in your config file.
+disclaimer: "Views are my own. Writing here is for learning, reflection, and discussion, not financial advice."
 
-# Meta description for your site.  This will help the search engines to find your site.
-description: "Recursion by Carlvin Mwange Jerry: quantitative finance, functional programming, life, and reflective writing."
+# Meta description for your site. This will help the search engines to find your site.
+description: "RΞCURSION by Carlvin Mwange Jerry: quantitative finance, functional programming, life, and reflective writing."
 
-# specify the list of custom menus that you want to show in the top navbar.
-# they will be separated by a divider from the main menus.
+# Specify the list of custom menus that you want to show in the top navbar.
 customMenus:
-- name: Docs
-  url: https://toha-guides.netlify.app/posts/
-  # specify whether to hide the menu item from top navbar or not.
+- name: CV
+  url: /files/resume.pdf
   hideFromNavbar: false
-  # specify whether to show the menu item in footer or not.
-  # if you set it to true, make sure you have set `footer.navigation.customMenus: true` in your config.yaml
   showOnFooter: false
 
 # Specify OpenGraph Headers
 openGraph:
   title: RΞCURSION | Recursive Insight
   type: website
-  description: "Recursion by Carlvin Mwange Jerry: quantitative finance, functional programming, life, and reflective writing."
+  description: "RΞCURSION by Carlvin Mwange Jerry: quantitative finance, functional programming, life, and reflective writing."
   image: images/author/j5.jpg
-  url: https://carlvinjerry.github.io
+  url: https://www.carlvinjerry.com

@@ -19,7 +19,7 @@ company:
 # resume: "files/resume.pdf"
 
 # a summary about you
-summary:  'I am passionate quantitative analyst and developer, blending statistical programming and functional programming techniques to drive data-driven innovation in finance. "RΞCURSION" explores the dynamic world of technology, data analysis, and software development, sharing insights, projects, and innovations that highlight data-driven problem-solving and emerging tools across industries.'
+summary:  'I write about quantitative finance, functional programming, and the strange loops between code, markets, work, and life. RΞCURSION is where technical notes, models, and reflective essays meet: a working notebook for systems, risk, and the habits that shape better decisions.'
 # your social links
 # give as many as you want. use font-awesome for the icons.
 socialLinks:
@@ -46,7 +46,7 @@ socialLinks:
 # You can put custom buttons to link your relevant resources.
 # For example, you can put link for your resume.
 resourceLinks:
-- title: "My Resume"
+- title: "Download CV"
   url: "files/resume.pdf"
 
 # Show your badges

@@ -3,6 +3,7 @@ title: " Optimizing Pattern Matching in F# for Better Performance "
 author: Carlvin Jerry
 date: 2025-03-03T21:37:25+06:00
 description: A Guide to Optimized Functional Programming with improved pattern matching.
+summary: "This post explores pattern matching in F# and shows how to structure match expressions for clearer, more efficient functional code when working with larger data shapes."
 image: /images/patterns.jpg
 menu:
   sidebar:

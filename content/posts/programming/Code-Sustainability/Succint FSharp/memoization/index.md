@@ -3,6 +3,7 @@ title: "Memoization with Fibonacci"
 author: Carlvin Jerry
 date: 2024-11-04T21:37:25+06:00
 description: A Guide to Optimized Functional Programming with Memoization in F#
+summary: "This post explains memoization as a functional performance optimization technique, using repeated computations to show how caching improves F# code efficiency."
 canonical: "https://blogs.innova.co.ke/memoization/"
 image: /images/memory.jpg
 menu:

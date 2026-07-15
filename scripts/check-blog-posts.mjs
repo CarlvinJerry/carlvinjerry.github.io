@@ -117,6 +117,7 @@ for (const filePath of walk(postsRoot)) {
   if (isArticle(filePath)) {
     assertDate(data.date, filePath);
     assertText(data.description, "description", filePath);
+    assertText(data.summary, "summary", filePath);
   }
 }
 

@@ -151,6 +151,15 @@
   bottom: 2.25rem;
 }
 
+.consultation-modal {
+  z-index: 1100;
+}
+
+.consultation-modal .modal-dialog {
+  margin-top: 5.25rem;
+  margin-bottom: 1.5rem;
+}
+
 .consultation-modal .modal-content {
   overflow: hidden;
   border: 1px solid rgba(216, 245, 247, 0.18);
@@ -983,13 +992,37 @@ footer {
     justify-content: center;
   }
 
+  .consultation-modal .modal-dialog {
+    display: flex;
+    align-items: flex-start;
+    min-height: calc(100% - 1rem);
+    margin: 4.75rem 0.5rem 1rem;
+  }
+
+  .consultation-modal .modal-content {
+    max-height: calc(100vh - 5.75rem);
+    overflow-y: auto;
+  }
+
   .work-with-me-grid,
   .work-capabilities {
     grid-template-columns: 1fr;
   }
 
+  .work-with-me-section {
+    padding-bottom: 2.25rem !important;
+  }
+
+  .work-capabilities {
+    margin-bottom: 1.25rem;
+  }
+
   .work-capability {
     min-height: auto;
+  }
+
+  .work-capability:last-child {
+    margin-bottom: 0.75rem;
   }
 
   .work-action {

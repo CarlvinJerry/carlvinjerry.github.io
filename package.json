@@ -28,7 +28,8 @@
     }
   },
   "scripts": {
-    "check:blog": "node scripts/check-blog-posts.mjs"
+    "check:blog": "node scripts/check-blog-posts.mjs",
+    "new:post": "node scripts/new-post.mjs"
   },
   "devDependencies": {
     "@fontsource/mulish": "4.5.13",

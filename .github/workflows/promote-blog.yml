@@ -1,4 +1,4 @@
-name: Promote Blog Changes
+name: Promote Site Changes
 
 on:
   push:
@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: promote-blog
+  group: promote-site
   cancel-in-progress: false
 
 jobs:
@@ -43,7 +43,7 @@ jobs:
       - name: Build
         run: hugo --gc --minify --enableGitInfo
 
-      - name: Promote blog-only changes to main
+      - name: Promote allowed site changes to main
         id: promote
         run: |
           set -euo pipefail
@@ -58,10 +58,10 @@ jobs:
           fi
 
           disallowed_files="$(printf '%s\n' "$changed_files" \
-            | grep -Ev '^(content/posts/|assets/images/|static/images/|static/files/)' || true)"
+            | grep -Ev '^(content/|assets/|static/|data/|layouts/|i18n/|archetypes/|scripts/|\.github/workflows/|hugo\.yaml$|go\.(mod|sum)$|package(-lock)?\.json$|package\.hugo\.json$|README\.md$)' || true)"
 
           if [ -n "$disallowed_files" ]; then
-            echo "Develop contains non-blog changes, so main will not be updated automatically:"
+            echo "Develop contains files outside the allowed site-change paths, so main will not be updated automatically:"
             echo "$disallowed_files"
             echo "promoted=false" >> "$GITHUB_OUTPUT"
             exit 0

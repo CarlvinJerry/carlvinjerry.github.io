@@ -28,10 +28,12 @@ Required front matter for article posts:
 title: "Post title"
 date: 2026-07-15T10:00:00+03:00
 description: "Short summary used by cards, previews, and checks."
+summary: "Card summary used on post lists."
 categories: ["Programming"]
 tags: ["F#", "Code Sustainability"]
 image: /images/example.png
 hero: example.png
+canonical: "https://original.example.com/post/"
 ---
 ```
 
@@ -42,9 +44,49 @@ Post rules enforced by `npm run check:blog`:
 - `title` must be non-empty
 - article posts must have a valid `date`
 - article posts must have a non-empty `description`
+- article posts must have a non-empty `summary`
 - `tags`, when present, must be a list of strings
 - `categories`, when present, must be a list of strings
 - relative `image` or `hero` files must exist next to the post
+
+If a post was first published elsewhere, set `canonical` in front matter and include a visible note near the top of the post:
+
+```markdown
+> Originally published at [Original Site](https://original.example.com/post/).
+```
+
+## Generating A Post Folder
+
+Use the generator when you want Codex or the terminal to create the section, optional child section, post folder, front matter, copied cover image, canonical note, and `index.md` in one step.
+
+```powershell
+npm run new:post -- `
+  --title "A Year Is Enough to Know What You Don't Know" `
+  --date 2026-07-14T09:00:00+03:00 `
+  --section Life `
+  --subcategory Mentorship `
+  --slug one-year-in-hod `
+  --author "Carlvin Jerry" `
+  --description "A reflective leadership essay on the first year in an HOD role." `
+  --summary "This post reflects on one year in leadership, mentorship, difficult conversations, and sustainable team culture." `
+  --categories "Life,Mentorship,Leadership" `
+  --tags "Leadership,Mentorship,Career Growth,Team Culture,HOD" `
+  --cover "C:\path\to\cover.jpg" `
+  --source "C:\path\to\draft.md" `
+  --canonical "https://original.example.com/post/"
+```
+
+Generator behavior:
+
+- creates `content/posts/<section>/` when missing
+- creates `content/posts/<section>/_index.md` when missing
+- creates `content/posts/<section>/<subcategory>/` when `--subcategory` is provided
+- creates the child `_index.md` with the correct sidebar parent
+- creates `content/posts/<section>/<subcategory>/<slug>/index.md`
+- copies the cover image into the post folder as `cover.<ext>`
+- sets both `image` and `hero` to the copied cover image
+- adds a visible original-publication note when `--canonical` is provided
+- strips source front matter and a matching top-level `# Title` from imported drafts
 
 Run checks before pushing:
 
@@ -62,7 +104,7 @@ git commit -m "Add my new post"
 git push origin develop
 ```
 
-After the push, GitHub Actions runs `Promote Blog Changes`. If the full diff from `main` to `develop` only contains blog/content asset files and checks pass, it updates `main` automatically. The `main` deployment workflow then publishes the site.
+After the push, GitHub Actions runs `Promote Site Changes`. If the full diff from `main` to `develop` only contains allowed site files and checks pass, it updates `main` automatically. The `main` deployment workflow then publishes the site.
 
 ## Blog Automerge
 
@@ -75,12 +117,24 @@ Direct pushes to `develop` are the normal path for blog posts. Blog PRs are stil
 
 Do not use `automerge-blog` for theme, workflow, dependency, or deployment changes.
 
-Direct-push promotion from `develop` to `main` is intentionally blog-only. If `develop` contains changes outside these paths, the promotion workflow skips the push to `main`:
+Direct-push promotion from `develop` to `main` is intentionally limited to site files. Blog posts, config edits, theme module updates, layouts, data files, static files, and workflow maintenance can deploy this way after checks pass. If `develop` contains changes outside these paths, the promotion workflow skips the push to `main`:
 
-- `content/posts/`
-- `assets/images/`
-- `static/images/`
-- `static/files/`
+- `content/`
+- `assets/`
+- `static/`
+- `data/`
+- `layouts/`
+- `i18n/`
+- `archetypes/`
+- `scripts/`
+- `.github/workflows/`
+- `hugo.yaml`
+- `go.mod`
+- `go.sum`
+- `package.json`
+- `package-lock.json`
+- `package.hugo.json`
+- `README.md`
 
 ## Theme Updates
 

@@ -3,7 +3,10 @@ name: "Carlvin Jerry Mwange"
 nickname: "RΞCURSION"
 consultation:
   label: "Discuss a Project"
-  url: "mailto:carlvinjerry@gmail.com?subject=Consultation%20inquiry"
+  email: "carlvinjerry@gmail.com"
+  phone: "+254747942588"
+  phoneLabel: "+254 (0)747 942 588"
+  intro: "I help teams turn messy data, market questions, and operational uncertainty into useful systems: quantitative research, risk models, analytics workflows, F#/.NET tooling, dashboards, and decision-support pipelines."
 # greeting message before your name. it will default to "Hi! I am" if not provided
 #greeting: "Hi, I am"
 image: "images/author/j5.jpg"

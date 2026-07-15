@@ -173,7 +173,7 @@
     </ul>
     <div class="home-actions">
       {{ with $author.consultation }}
-      <a class="home-action primary" href="{{ .url }}">{{ .label }}</a>
+      <button class="home-action primary" type="button" data-bs-toggle="modal" data-bs-target="#consultation-modal">{{ .label }}</button>
       {{ end }}
       <a class="home-action secondary" href="{{ "posts" | relURL }}">Read the Blog</a>
     </div>
@@ -189,3 +189,59 @@
     {{ end }}
   </div>
 </div>
+
+{{ with $author.consultation }}
+<div class="modal fade consultation-modal" id="consultation-modal" tabindex="-1" aria-labelledby="consultation-modal-title" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div>
+          <p class="consultation-kicker">Consultation</p>
+          <h2 class="modal-title" id="consultation-modal-title">Build the useful system, not just the report.</h2>
+        </div>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p class="consultation-intro">{{ .intro }}</p>
+        <form class="consultation-form" action="mailto:{{ .email }}?subject=Consultation%20inquiry" method="post" enctype="text/plain">
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label for="consultation-name" class="form-label">Name</label>
+              <input id="consultation-name" class="form-control" name="Name" autocomplete="name" required>
+            </div>
+            <div class="col-md-6">
+              <label for="consultation-email" class="form-label">Email</label>
+              <input id="consultation-email" class="form-control" name="Email" type="email" autocomplete="email" required>
+            </div>
+            <div class="col-md-6">
+              <label for="consultation-context" class="form-label">Project context</label>
+              <select id="consultation-context" class="form-select" name="Project context">
+                <option>Data-driven system</option>
+                <option>Quant research or modelling</option>
+                <option>Analytics workflow</option>
+                <option>Technical advisory</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label for="consultation-timeline" class="form-label">Timeline</label>
+              <input id="consultation-timeline" class="form-control" name="Timeline" placeholder="This month, this quarter, exploratory...">
+            </div>
+            <div class="col-12">
+              <label for="consultation-brief" class="form-label">Brief</label>
+              <textarea id="consultation-brief" class="form-control" name="Brief" rows="5" placeholder="What are you trying to understand, automate, model, or decide?" required></textarea>
+            </div>
+          </div>
+          <div class="consultation-submit-row">
+            <button type="submit" class="btn consultation-submit">Send Email</button>
+            <span class="consultation-note">Opens your email app with the form details.</span>
+          </div>
+        </form>
+        <div class="consultation-direct">
+          <a href="mailto:{{ .email }}">Email: {{ .email }}</a>
+          <a href="tel:{{ .phone }}">Call: {{ .phoneLabel }}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}

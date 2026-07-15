@@ -42,4 +42,4 @@ jobs:
           publish_dir: ./public
           force_orphan: true
           clean: true
-          cname: carlvinjerry.com  # Explicitly set custom domain
+          cname: www.carlvinjerry.com

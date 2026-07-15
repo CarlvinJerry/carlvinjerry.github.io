@@ -700,6 +700,176 @@
   color: #ffffff;
 }
 
+html[data-theme="light"] {
+  --recursion-light-ink: #172033;
+  --recursion-light-muted: #475569;
+  --recursion-light-soft: #eef4fb;
+  --recursion-light-panel: #ffffff;
+  --recursion-light-border: rgba(15, 23, 42, 0.12);
+  --recursion-light-cyan: #087f95;
+}
+
+html[data-theme="light"] .section-holder {
+  background: #f8fafc;
+}
+
+html[data-theme="light"] .section-holder:nth-of-type(even) {
+  background: #e8eef6;
+}
+
+html[data-theme="light"] .about-section h3,
+html[data-theme="light"] .work-with-me-intro h2,
+html[data-theme="light"] .work-capability h3 {
+  color: var(--recursion-light-ink);
+}
+
+html[data-theme="light"] .about-section h5,
+html[data-theme="light"] .about-section p,
+html[data-theme="light"] .work-with-me-intro > p:not(.section-eyebrow):not(.work-contact-note),
+html[data-theme="light"] .work-contact-note,
+html[data-theme="light"] .work-capability p {
+  color: var(--recursion-light-muted);
+}
+
+html[data-theme="light"] .section-eyebrow {
+  color: #a16207;
+}
+
+html[data-theme="light"] .work-contact-note a {
+  color: #0f766e;
+}
+
+html[data-theme="light"] .work-capability {
+  border-color: var(--recursion-light-border);
+  background:
+    linear-gradient(180deg, rgba(8, 127, 149, 0.08), rgba(255, 255, 255, 0.6)),
+    var(--recursion-light-panel);
+  box-shadow: 0 18px 42px rgba(15, 23, 42, 0.1);
+}
+
+html[data-theme="light"] .work-capability:hover,
+html[data-theme="light"] .work-capability:focus-within {
+  border-color: rgba(8, 127, 149, 0.38);
+  background:
+    linear-gradient(180deg, rgba(8, 127, 149, 0.12), rgba(255, 255, 255, 0.72)),
+    var(--recursion-light-panel);
+  box-shadow: 0 24px 58px rgba(15, 23, 42, 0.14);
+}
+
+html[data-theme="light"] .work-action.secondary {
+  border-color: var(--recursion-light-border);
+  background: rgba(255, 255, 255, 0.76);
+  color: var(--recursion-light-ink);
+}
+
+html[data-theme="light"] .work-action.secondary:hover,
+html[data-theme="light"] .work-action.secondary:focus {
+  border-color: rgba(8, 127, 149, 0.44);
+  color: #0f766e;
+}
+
+html[data-theme="light"] .recent-posts-section .card,
+html[data-theme="light"] .content-section .post-card .card {
+  border-color: var(--recursion-light-border);
+  background: var(--recursion-light-panel);
+  box-shadow: 0 18px 42px rgba(15, 23, 42, 0.09);
+}
+
+html[data-theme="light"] .recent-posts-section .card-title,
+html[data-theme="light"] .content-section .post-card .card-title {
+  color: var(--recursion-light-ink);
+}
+
+html[data-theme="light"] .recent-posts-section .post-summary,
+html[data-theme="light"] .content-section .post-card .post-summary {
+  color: var(--recursion-light-muted);
+}
+
+html[data-theme="light"] .recent-posts-section .card-footer,
+html[data-theme="light"] .content-section .post-card .card-footer {
+  border-top-color: var(--recursion-light-border);
+  background: var(--recursion-light-soft);
+}
+
+html[data-theme="light"] .type-posts.kind-page .content-section {
+  background: #e8eef6;
+}
+
+html[data-theme="light"] .type-posts.kind-page .page-content {
+  color: var(--recursion-light-ink);
+}
+
+html[data-theme="light"] .type-posts.kind-page .title h1,
+html[data-theme="light"] .type-posts.kind-page .author-profile .author-name {
+  color: var(--recursion-light-ink);
+}
+
+html[data-theme="light"] .type-posts.kind-page .author-profile .text-muted {
+  color: #64748b !important;
+}
+
+html[data-theme="light"] .type-posts.kind-page .post-content p,
+html[data-theme="light"] .type-posts.kind-page .post-content li {
+  color: #334155;
+}
+
+html[data-theme="light"] .type-posts.kind-page .post-content h2,
+html[data-theme="light"] .type-posts.kind-page .post-content h3,
+html[data-theme="light"] .type-posts.kind-page .post-content h4 {
+  color: var(--recursion-light-ink);
+}
+
+html[data-theme="light"] .type-posts.kind-page .post-content h2 {
+  border-bottom-color: var(--recursion-light-border);
+}
+
+html[data-theme="light"] .type-posts.kind-page .post-content a {
+  color: #087f95;
+}
+
+html[data-theme="light"] .type-posts.kind-page .post-content blockquote {
+  background: rgba(229, 180, 84, 0.14);
+  color: #334155;
+}
+
+html[data-theme="light"] .type-posts.kind-page .post-content code {
+  background: rgba(8, 127, 149, 0.12);
+  color: #075569;
+}
+
+html[data-theme="light"] .type-posts.kind-page .post-content pre code {
+  background: transparent;
+  color: inherit;
+}
+
+html[data-theme="light"] .type-posts.kind-page .post-content table {
+  border-color: var(--recursion-light-border);
+}
+
+html[data-theme="light"] .type-posts.kind-page .post-content th {
+  background: rgba(8, 127, 149, 0.12);
+  color: var(--recursion-light-ink);
+}
+
+html[data-theme="light"] .type-posts.kind-page .toc-holder {
+  border-color: var(--recursion-light-border);
+  background: rgba(255, 255, 255, 0.86);
+  box-shadow: 0 18px 42px rgba(15, 23, 42, 0.08);
+}
+
+html[data-theme="light"] .type-posts.kind-page .toc-holder h5 {
+  color: var(--recursion-light-ink);
+}
+
+html[data-theme="light"] .type-posts.kind-page .toc a {
+  color: #334155;
+}
+
+html[data-theme="light"] .type-posts.kind-page .toc a:hover,
+html[data-theme="light"] .type-posts.kind-page .toc a:focus {
+  color: #0f766e;
+}
+
 footer {
   background: #0b1220;
 }

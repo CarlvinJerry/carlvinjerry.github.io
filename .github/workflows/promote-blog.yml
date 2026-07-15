@@ -1,0 +1,86 @@
+name: Promote Blog Changes
+
+on:
+  push:
+    branches:
+      - develop
+
+permissions:
+  contents: write
+
+concurrency:
+  group: promote-blog
+  cancel-in-progress: false
+
+jobs:
+  check-and-promote:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout develop
+        uses: actions/checkout@v7
+        with:
+          ref: develop
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Check blog posts
+        run: npm run check:blog
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: latest
+          extended: true
+
+      - name: Build
+        run: hugo --gc --minify --enableGitInfo
+
+      - name: Promote blog-only changes to main
+        id: promote
+        run: |
+          set -euo pipefail
+
+          git fetch origin main develop
+
+          changed_files="$(git diff --name-only origin/main..origin/develop)"
+          if [ -z "$changed_files" ]; then
+            echo "No changes to promote."
+            echo "promoted=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          disallowed_files="$(printf '%s\n' "$changed_files" \
+            | grep -Ev '^(content/posts/|assets/images/|static/images/|static/files/)' || true)"
+
+          if [ -n "$disallowed_files" ]; then
+            echo "Develop contains non-blog changes, so main will not be updated automatically:"
+            echo "$disallowed_files"
+            echo "promoted=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git switch main
+          git reset --hard origin/main
+          git merge --ff-only origin/develop
+          git push origin main
+          echo "promoted=true" >> "$GITHUB_OUTPUT"
+
+      - name: Deploy promoted site
+        if: steps.promote.outputs.promoted == 'true'
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          force_orphan: true
+          cname: www.carlvinjerry.com

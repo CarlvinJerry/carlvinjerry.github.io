@@ -12,12 +12,11 @@ Static Hugo site for [www.carlvinjerry.com](https://www.carlvinjerry.com/), host
 
 ## Adding A Blog Post
 
-Create a branch from `develop`:
+For ordinary blog posts, work directly on `develop`:
 
 ```powershell
 git switch develop
 git pull --ff-only origin develop
-git switch -c post/my-new-post
 ```
 
 Add the post under `content/posts/...`. Article files should usually be named `index.md` or `index.markdown` inside a folder for that post.
@@ -55,18 +54,19 @@ npm run check:blog
 hugo --gc --minify --enableGitInfo
 ```
 
-Push and open a PR into `develop`:
+Commit and push to `develop`:
 
 ```powershell
 git add content/posts
 git commit -m "Add my new post"
-git push -u origin post/my-new-post
-gh pr create --base develop --head post/my-new-post --title "Add my new post"
+git push origin develop
 ```
+
+After the push, GitHub Actions runs `Promote Blog Changes`. If the full diff from `main` to `develop` only contains blog/content asset files and checks pass, it updates `main` automatically. The `main` deployment workflow then publishes the site.
 
 ## Blog Automerge
 
-Blog PRs can be merged automatically into `develop` when all of these are true:
+Direct pushes to `develop` are the normal path for blog posts. Blog PRs are still supported when you want review first, and can be merged automatically into `develop` when all of these are true:
 
 - the PR targets `develop`
 - the PR has the `automerge-blog` label
@@ -74,6 +74,13 @@ Blog PRs can be merged automatically into `develop` when all of these are true:
 - changed files are limited to `content/posts/`, `assets/images/`, `static/images/`, or `static/files/`
 
 Do not use `automerge-blog` for theme, workflow, dependency, or deployment changes.
+
+Direct-push promotion from `develop` to `main` is intentionally blog-only. If `develop` contains changes outside these paths, the promotion workflow skips the push to `main`:
+
+- `content/posts/`
+- `assets/images/`
+- `static/images/`
+- `static/files/`
 
 ## Theme Updates
 

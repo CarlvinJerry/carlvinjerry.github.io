@@ -1,6 +1,6 @@
 baseURL: https://carlvinjerry.github.io
 
-languageCode: en-us
+locale: en-us
 title: "CARLVIN M's portfolio website" #"CARLVIN || BEYOND RAW DATA"
 
 # Use Hugo modules to add theme
@@ -21,13 +21,13 @@ module:
 # For any more details, you can check the official documentation: https://gohugo.io/content-management/multilingual/
 languages:
   en:
-    languageCode: en
-    languageName: English
+    locale: en
+    label: English
     title: "RΞCURSION"
     weight: 1
   bn:
-    languageCode: bn
-    languageName: বাংলা
+    locale: bn
+    label: বাংলা
     title: জনের ব্লগ
     weight: 2
 # default language for the content

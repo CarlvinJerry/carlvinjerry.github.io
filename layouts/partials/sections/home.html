@@ -172,10 +172,7 @@
       {{ end }}
     </ul>
     <div class="home-actions">
-      {{ with $author.consultation }}
-      <button class="home-action primary" type="button" data-bs-toggle="modal" data-bs-target="#consultation-modal">{{ .label }}</button>
-      {{ end }}
-      <a class="home-action secondary" href="{{ "posts" | relURL }}">Read the Blog</a>
+      <a class="home-action secondary" href="#recent-posts">Recent Posts</a>
     </div>
     {{ if $sections }}
     {{ range first 1 (where (sort $sections "section.weight") ".section.enable" true) }}

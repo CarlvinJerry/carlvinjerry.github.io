@@ -1,0 +1,26 @@
+# section information
+section:
+  name: Work With Me
+  id: work-with-me
+  enable: true
+  weight: 2
+  showOnNavbar: true
+  template: sections/work-with-me.html
+
+eyebrow: Consulting
+heading: Turn complex data questions into usable systems.
+summary: "I work with teams that need more than a dashboard screenshot: quant research that can be explained, data applications people can operate, and decision-support tools that survive contact with real workflows."
+
+capabilities:
+- title: Quant Research
+  summary: "Portfolio analytics, risk modelling, time-series experiments, allocation logic, and reproducible research workflows."
+- title: Data Systems
+  summary: "Pipelines, validation layers, reporting automation, and decision-support tooling around messy operational data."
+- title: Dashboards & Apps
+  summary: "Python, R Shiny, and Django dashboards for teams that need live insight rather than static reports."
+- title: Technical Advisory
+  summary: "Architecture reviews, modelling assumptions, analytics strategy, and practical guidance for data-driven products."
+
+cta:
+  primary: Work With Me
+  secondary: Read the Blog

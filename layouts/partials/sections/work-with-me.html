@@ -1,0 +1,38 @@
+{{ $sectionID := replace (lower .section.name) " " "-" }}
+{{ if .section.id }}
+  {{ $sectionID = .section.id }}
+{{ end }}
+
+{{ $author := hugo.Data.author }}
+{{ if (index hugo.Data site.Language.Lang).author }}
+  {{ $author = (index hugo.Data site.Language.Lang).author }}
+{{ end }}
+
+<div class="container anchor p-lg-5 work-with-me-section" id="{{ $sectionID }}">
+  <div class="work-with-me-grid">
+    <div class="work-with-me-intro">
+      {{ with .eyebrow }}<p class="section-eyebrow">{{ . }}</p>{{ end }}
+      <h2>{{ .heading }}</h2>
+      <p>{{ .summary }}</p>
+      <div class="work-with-me-actions">
+        {{ with .cta.primary }}
+        <button class="work-action primary" type="button" data-bs-toggle="modal" data-bs-target="#consultation-modal">{{ . }}</button>
+        {{ end }}
+        {{ with .cta.secondary }}
+        <a class="work-action secondary" href="{{ "posts" | relURL }}">{{ . }}</a>
+        {{ end }}
+      </div>
+      {{ with $author.consultation }}
+      <p class="work-contact-note">Prefer a direct conversation? <a href="tel:{{ .phone }}">Call</a> or <a href="{{ .whatsapp }}" target="_blank" rel="noopener">WhatsApp</a>.</p>
+      {{ end }}
+    </div>
+    <div class="work-capabilities" aria-label="Consulting capabilities">
+      {{ range .capabilities }}
+      <article class="work-capability">
+        <h3>{{ .title }}</h3>
+        <p>{{ .summary }}</p>
+      </article>
+      {{ end }}
+    </div>
+  </div>
+</div>

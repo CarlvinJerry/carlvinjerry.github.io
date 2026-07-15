@@ -1,0 +1,58 @@
+name: Automerge Blog Posts
+
+on:
+  workflow_run:
+    workflows:
+      - PR Workflows
+    types:
+      - completed
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  merge:
+    if: >
+      github.event.workflow_run.event == 'pull_request' &&
+      github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Merge eligible blog PR
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          HEAD_SHA: ${{ github.event.workflow_run.head_sha }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+
+          pr_number="$(gh pr list \
+            --repo "$REPO" \
+            --state open \
+            --base develop \
+            --label automerge-blog \
+            --json number,headRefOid \
+            --jq ".[] | select(.headRefOid == \"$HEAD_SHA\") | .number" \
+            | head -n 1)"
+
+          if [ -z "$pr_number" ]; then
+            echo "No open develop PR with label automerge-blog matched $HEAD_SHA."
+            exit 0
+          fi
+
+          disallowed_files="$(gh pr view "$pr_number" \
+            --repo "$REPO" \
+            --json files \
+            --jq '.files[].path' \
+            | grep -Ev '^(content/posts/|assets/images/|static/images/|static/files/)' || true)"
+
+          if [ -n "$disallowed_files" ]; then
+            echo "PR #$pr_number is labeled automerge-blog but touches files outside allowed blog paths:"
+            echo "$disallowed_files"
+            exit 1
+          fi
+
+          gh pr merge "$pr_number" \
+            --repo "$REPO" \
+            --merge \
+            --delete-branch

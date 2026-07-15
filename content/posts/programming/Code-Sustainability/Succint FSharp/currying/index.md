@@ -1,6 +1,7 @@
 ---
 title: "Currying and Partial Application in F#"
 description: A deep dive into currying and partial application in F# with examples and use cases in functional programming.
+summary: "This post breaks down currying and partial application in F#, explaining how multi-argument functions can be composed, reused, and specialized for cleaner functional programming workflows."
 date: 2024-10-07T08:06:25+06:00
 canonical: https://www.innova.co.ke/currying-and-partial-application/
 hero: partial.jpg 

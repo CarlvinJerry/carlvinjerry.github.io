@@ -2,6 +2,7 @@
 title: "What’s New in F# 9 for Quant Developers"
 date: 2025-04-23T19:51:10+03:00
 description: "F# 9 introduces powerful language features—such as improved type inference, enhanced pattern matching, anonymous record updates, and custom equality for structs—that streamline quantitative workflows and reduce code complexity in financial modeling and data processing."
+summary: "This post reviews F# 9 features through a quant-developer lens, covering language improvements that make financial modeling, data workflows, and high-integrity code easier to express."
 readingTime: true
 image: /images/fsharp.png
 categories: ["Programming", "Languages", "F#"]

@@ -3,6 +3,7 @@ title: "Attributing for Risk in Portfolio Management"
 author: Carlvin Jerry
 date: 2024-12-02T21:37:25+06:00
 description: A Guide to Calculating Risk Contributions in Portfolio Management Using Volatility
+summary: "This post explains portfolio risk attribution, showing how volatility and risk contribution formulas help identify which assets drive overall portfolio risk."
 canonical: "https://blogs.innova.co.ke/portfolio-risk-attribution.md/"
 hero: risk.jpg
 image: /images/risk.jpg

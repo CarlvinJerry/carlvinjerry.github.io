@@ -2,6 +2,7 @@
 
 title: "Mastering Python's Exceptional Complexity"
 description: "Mastering Python's Exceptional Complexity for Sustainable Error Handling"
+summary: "This post explains Python exception handling from syntax errors through try, except, else, and finally blocks, showing how structured error handling improves resilience, cleanup, and code clarity."
 date: 2023-09-14T06:00:20+06:00
 image: errors.jpg
 hero: errors.jpg

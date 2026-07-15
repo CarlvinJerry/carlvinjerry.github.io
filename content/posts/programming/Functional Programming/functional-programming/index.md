@@ -2,6 +2,7 @@
 title: "Functional Programming"
 date: 2023-04-20T19:17:21+03:00
 description: "A deep dive into the world of functional programming and its practical implications"
+summary: "This post introduces functional programming principles such as pure functions, immutability, first-class functions, and higher-order composition, with practical F# examples."
 readingTime: true
 image: /images/functional.jpg
 categories: ["Programming", "Languages", "F#"]

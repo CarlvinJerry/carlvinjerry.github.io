@@ -144,6 +144,16 @@ The site uses Toha as a Hugo module:
 github.com/hugo-toha/toha/v4
 ```
 
+Personal look-and-feel changes live in local override files, not inside the downloaded theme module:
+
+- `assets/styles/recursion.scss`
+- `layouts/partials/header.html`
+- `layouts/partials/sections/home.html`
+- `layouts/partials/sections/about.html`
+- `data/en/*.yaml`
+
+This keeps future Toha updates mergeable. When updating the original theme, update the Hugo module and then review whether any local partial overrides need to be adjusted for upstream template changes.
+
 To update the theme manually:
 
 ```powershell

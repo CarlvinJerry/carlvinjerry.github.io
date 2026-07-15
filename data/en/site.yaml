@@ -10,7 +10,7 @@ description: "RΞCURSION by Carlvin Mwange Jerry: quantitative finance, function
 # Specify the list of custom menus that you want to show in the top navbar.
 customMenus:
 - name: CV
-  url: /files/resume.pdf
+  url: /files/Carlvin%20M%20Jerry%27s%20resume.pdf
   hideFromNavbar: false
   showOnFooter: false
 

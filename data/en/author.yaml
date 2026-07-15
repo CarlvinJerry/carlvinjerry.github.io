@@ -1,7 +1,9 @@
 # some information about you
 name: "Carlvin Jerry Mwange"
 nickname: "RΞCURSION"
-subtitle: "Quant finance, functional programming, and life in systems."
+consultation:
+  label: "Discuss a Project"
+  url: "mailto:carlvinjerry@gmail.com?subject=Consultation%20inquiry"
 # greeting message before your name. it will default to "Hi! I am" if not provided
 #greeting: "Hi, I am"
 image: "images/author/j5.jpg"
@@ -16,6 +18,6 @@ contactInfo:
 # some summary about what you do
 summary:
   - Quant Finance
-  - Functional Programming
+  - Functional Code
   - Life in Systems
   - Recursive Insight

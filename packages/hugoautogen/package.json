@@ -26,5 +26,6 @@
     "typeit": "^8.8.7"
   },
   "name": "carlvinjerry.github.io",
+  "private": true,
   "version": "0.1.0"
 }
